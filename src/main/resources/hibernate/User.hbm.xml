@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.example.AndxEntertainmentProject.AndxUser" table="user" catalog="AndxEntertainment">
+        <id name="Id" type="java.lang.Long">
+            <column name="first_name" />
+            <generator class="com.example.AndxEntertainmentProject.AndxUser" />
+        </id>
+        <property name="first_name" type="string">
+            <column name="first_name" length="10" not-null="true" unique="true" />
+        </property>
+        <property name="surname" type="string">
+            <column name="surname" length="20" not-null="true" unique="true" />
+        </property>
+        <property name="DOB" type="string">
+            <column name="DOB" length="10" not-null="true" unique="true" />
+        </property>
+    </class>
+</hibernate-mapping>

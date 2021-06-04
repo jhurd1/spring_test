@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>BlitzTix</title>
+</head>
+
+<body onload="display()">
+    <header>
+        <div class="nav_container">
+          <img src="images/andx_logo.png" alt="logo" class="logo">
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="UserLogin.html">Login</a></li>
+              <li><a class="active" href="UserVenueSelection.html">Venue Select</a></li>
+              <li><a href="DataFeed.html">Data Feed</a></li>
+              <li><a href="Reports.html">Reports</a></li>
+              <li><a href="SeatSections.html">Seat Selection</a></li>
+              <li><a href="CreateEvent.html">Create Event</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <h2>User Venue Selection </h2>
+    <form action="/action_page.php">
+        <input type="checkbox" id="venue1" name="venue1" value="CivicAuditorium">
+        <label for="venue1"> Civic Auditorium</label><br>
+        <input type="checkbox" id="venue2" name="venue2" value="Venue2">
+        <label for="venue2"> Venue #2</label><br>
+        <input type="checkbox" id="venue3" name="venue3" value="Venue3">
+        <label for="venue3"> Venue #3</label><br><br>  
+    </form>
+    <a href="home.html" class="button">
+    <button type="submit">Submit</button></a>
+
+    <footer>
+      <p>©2021 by AND X Entertainment.<br>
+    (208) 534-5699</p>
+  </footer>
+
+</body>
+</html>

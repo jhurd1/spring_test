@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title> BlitzTix</title>
+</head>
+
+<body onload="display()">
+  <header>
+    <div class="nav_container">
+      <img src="images/andx_logo.png" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="UserLogin.html">Login</a></li>
+          <li><a href="UserVenueSelection.html">Venue Select</a></li>
+          <li><a href="DataFeed.html">Data Feed</a></li>
+          <li><a href="Reports.html">Reports</a></li>
+          <li><a href="SeatSections.html">Seat Selection</a></li>
+          <li><a class="active" href="CreateEvent.html">Create Event</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <h2>Create An Event</h2>
+    <form class="form-style-7">
+      <ul>
+      <li>
+          <label for="event_type">Type of Event</label>
+          <input type="event_type" name="event_type" maxlength="100">
+          <span>Enter the type of event</span>
+      </li>
+      <li>
+          <label for="event_title">Event Title</label>
+          <input type="event_title" name="event_title" maxlength="100">
+          <span>Enter the title of the event</span>
+      </li>
+      <li>
+          <label for="start_time">Starting Time</label>
+          <input type="start_time" name="start_time" maxlength="100">
+          <span>Enter what time your event starts</span>
+      </li>
+      <li>
+          <label for="end_time">End Time</label>
+          <input type="end_time" name="end_time" maxlength="100">
+          <span>Enter what time your event ends</span>
+      </li>
+      <li>
+        <label for="ticket_cost">Cost of Tickets</label>
+        <input type="ticket_cost" name="ticket_cost" maxlength="100">
+        <span>Enter the Cost of Tickets</span>
+    </li>
+    <li>
+      <label for="desiredVenue">Desired Venue</label>
+      <input type="desired_venue" name="desired_venue" maxlength="100">
+      <span>Enter your desired venue</span>
+    </li>
+    <li>
+      <label for="rent_cost">Cost of Renting Venue</label>
+      <input type="rent_cost" name="rent_cost" maxlength="100">
+      <span>Enter what it will cost to rent the venue</span>
+    </li>
+    <li>
+      <div class="button-section">
+        <input type="submit" name="Submit" />
+        <span class="privacy-policy">
+        </span>
+      </div>
+    </li>
+  </ul>
+  </form>
+
+
+    <!-- <form>
+        <table class="center">
+          <tr>
+            <td align="right">Type of Event:</td>
+            <td align="left"><input type="text" placeholder="Type of Event" name="eventType" required></td>
+          </tr>
+          <tr>
+            <td align="right">Event Title:</td>
+            <td align="left"><input type="text" placeholder="Title" name="eventTitle" required></td>
+          </tr>
+          <tr>
+            <td align="right">Starting Time:</td>
+            <td align="left"><input type="text" placeholder="Start Time" name="startTime" required></td>
+          </tr>
+          <tr>
+            <td align="right">End Time:</td>
+            <td align="left"><input type="text" placeholder="End Time" name="endTime" required></td>
+          </tr>
+          <tr>
+            <td align="right">Cost of Tickets:</td>
+            <td align="left"><input type="text" placeholder="Ticket Cost" name="ticketCost" required></td>
+          </tr>
+          <tr>
+            <td align="right">Desired Venue:</td>
+            <td align="left"><input type="text" placeholder="Venue" name="desiredVenue"></td>
+          </tr>
+          <tr>
+            <td align="right">Cost of Renting Venue:</td>
+            <td align="left"><input type="text" placeholder="Renting Cost" name="venueRentCost"></td>
+          </tr>
+        </table>
+      </form> -->
+    
+
+      <footer>
+        <p>©2021 by AND X Entertainment.<br>
+      (208) 534-5699</p>
+    </footer>
+
+</body>
+</html>

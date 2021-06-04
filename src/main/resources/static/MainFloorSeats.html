@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <title> BlitzTix</title>
+</head>
+
+<body onload="RowLabel()">
+  <header>
+    <div class="nav_container">
+      <img src="images/andx_logo.png" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="UserLogin.html">Login</a></li>
+          <li><a href="UserVenueSelection.html">Venue Select</a></li>
+          <li><a href="DataFeed.html">Data Feed</a></li>
+          <li><a href="Reports.html">Reports</a></li>
+          <li><a class="active" href="SeatSections.html">Seat Selection</a></li>
+          <li><a href="CreateEvent.html">Create Event</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+      <div class="parent_container">
+
+<!---------------------------------------------Left Child------------------------------------------->
+        <div class="child_left">
+          <section id="seats">
+            <!--DD Seating-->
+            <input id="seat-DD109" class="seat-unselect" type="button" value="DD109" name="seat[]" />
+            <input id="seat-DD110" class="seat-select" type="checkbox" value="DD110" name="seat[]" />
+            <label for="seat-DD110" class="seat">110</label>
+            <input id="seat-DD111" class="seat-select" type="checkbox" value="DD111" name="seat[]" />
+            <label for="seat-DD111" class="seat">111</label>
+            <input id="seat-DD112" class="seat-select" type="checkbox" value="DD112" name="seat[]" />
+            <label for="seat-DD112" class="seat">112</label>
+            <input id="seat-DD113" class="seat-select" type="checkbox" value="DD113" name="seat[]" />
+            <label for="seat-DD113" class="seat">113</label>
+            <!-- handicap spaces-->
+            <input id="seat-H1" class="seat-select-handicap" type="checkbox" value="H1" name="seat[]" />
+            <label for="seat-H1" class="seat-handicap">H1</label>
+            <input id="seat-H2" class="seat-select-handicap" type="checkbox" value="H2" name="seat[]" />
+            <label for="seat-H2" class="seat-handicap">H2</label>
+            <input id="seat-H3" class="seat-select-handicap" type="checkbox" value="H3" name="seat[]" />
+            <label for="seat-H3" class="seat-handicap">H3</label>
+            <br><br>
+            <!--CC Seating-->
+            <input id="seat-CC101" class="seat-unselect" type="button" value="CC101" name="seat[]" />
+            <input id="seat-CC102" class="seat-select" type="checkbox" value="CC102" name="seat[]" />
+            <label for="seat-CC102" class="seat">102</label>
+            <input id="seat-CC103" class="seat-select" type="checkbox" value="CC103" name="seat[]" />
+            <label for="seat-CC103" class="seat">103</label>
+            <input id="seat-CC104" class="seat-select" type="checkbox" value="CC104" name="seat[]" />
+            <label for="seat-CC104" class="seat">104</label>
+            <input id="seat-CC105" class="seat-select" type="checkbox" value="CC105" name="seat[]" />
+            <label for="seat-CC105" class="seat">105</label>
+            <input id="seat-CC106" class="seat-select" type="checkbox" value="CC106" name="seat[]" />
+            <label for="seat-CC106" class="seat">106</label>
+            <input id="seat-CC107" class="seat-select" type="checkbox" value="CC107" name="seat[]" />
+            <label for="seat-CC107" class="seat">107</label>
+            <input id="seat-CC108" class="seat-select" type="checkbox" value="CC108" name="seat[]" />
+            <label for="seat-CC108" class="seat">108</label>
+            <input id="seat-CC109" class="seat-select" type="checkbox" value="CC109" name="seat[]" />
+            <label for="seat-CC109" class="seat">109</label>
+            <input id="seat-CC110" class="seat-select" type="checkbox" value="CC110" name="seat[]" />
+            <label for="seat-CC110" class="seat">110</label>
+            <input id="seat-CC111" class="seat-select" type="checkbox" value="CC111" name="seat[]" />
+            <label for="seat-CC111" class="seat">111</label>
+            <input id="seat-CC112" class="seat-select" type="checkbox" value="CC112" name="seat[]" />
+            <label for="seat-CC112" class="seat">112</label>
+            <input id="seat-CC113" class="seat-select" type="checkbox" value="CC113" name="seat[]" />
+            <label for="seat-CC113" class="seat">113</label>
+            <br><br>
+            <!--BB Seating-->
+              <input id="seat-BB101" class="seat-unselect" type="button" value="BB101" name="seat[]" />
+              <input id="seat-BB102" class="seat-select" type="checkbox" value="BB102" name="seat[]" />
+              <label for="seat-BB102" class="seat">BB</label>
+              <input id="seat-BB103" class="seat-select" type="checkbox" value="BB103" name="seat[]" />
+              <label for="seat-BB103" class="seat">103</label>
+              <input id="seat-BB104" class="seat-select" type="checkbox" value="BB104" name="seat[]" />
+              <label for="seat-BB104" class="seat">104</label>
+              <input id="seat-BB105" class="seat-select" type="checkbox" value="BB105" name="seat[]" />
+              <label for="seat-BB105" class="seat">105</label>
+              <input id="seat-BB106" class="seat-select" type="checkbox" value="BB106" name="seat[]" />
+              <label for="seat-BB106" class="seat">106</label>
+              <input id="seat-BB107" class="seat-select" type="checkbox" value="BB107" name="seat[]" />
+              <label for="seat-BB107" class="seat">107</label>
+              <input id="seat-BB108" class="seat-select" type="checkbox" value="BB108" name="seat[]" />
+              <label for="seat-BB108" class="seat">108</label>
+              <input id="seat-BB109" class="seat-select" type="checkbox" value="BB109" name="seat[]" />
+              <label for="seat-BB109" class="seat">109</label>
+              <input id="seat-BB110" class="seat-select" type="checkbox" value="BB110" name="seat[]" />
+              <label for="seat-BB110" class="seat">110</label>
+              <input id="seat-BB111" class="seat-select" type="checkbox" value="BB111" name="seat[]" />
+              <label for="seat-BB111" class="seat">111</label>
+              <input id="seat-BB112" class="seat-select" type="checkbox" value="BB112" name="seat[]" />
+              <label for="seat-BB112" class="seat">112</label>
+              <input id="seat-BB113" class="seat-select" type="checkbox" value="BB113" name="seat[]" />
+              <label for="seat-BB113" class="seat">113</label>
+              <br><br>
+            <!--AA Seating-->
+            <input id="seat-AA101" class="seat-unselect" type="button" value="AA101" name="seat[]" />
+              <input id="seat-AA102" class="seat-select" type="checkbox" value="AA102" name="seat[]" />
+              <label for="seat-AA102" class="seat">AA</label>
+              <input id="seat-AA103" class="seat-select" type="checkbox" value="AA103" name="seat[]" />
+              <label for="seat-AA103" class="seat">103</label>
+              <input id="seat-AA104" class="seat-select" type="checkbox" value="AA104" name="seat[]" />
+              <label for="seat-AA104" class="seat">104</label>
+              <input id="seat-AA105" class="seat-select" type="checkbox" value="AA105" name="seat[]" />
+              <label for="seat-AA105" class="seat">105</label>
+              <input id="seat-AA106" class="seat-select" type="checkbox" value="AA106" name="seat[]" />
+              <label for="seat-AA106" class="seat">106</label>
+              <input id="seat-AA107" class="seat-select" type="checkbox" value="AA107" name="seat[]" />
+              <label for="seat-AA107" class="seat">107</label>
+              <input id="seat-AA108" class="seat-select" type="checkbox" value="AA108" name="seat[]" />
+              <label for="seat-AA108" class="seat">108</label>
+              <input id="seat-AA109" class="seat-select" type="checkbox" value="AA109" name="seat[]" />
+              <label for="seat-AA109" class="seat">109</label>
+              <input id="seat-AA110" class="seat-select" type="checkbox" value="AA110" name="seat[]" />
+              <label for="seat-AA110" class="seat">110</label>
+              <input id="seat-AA111" class="seat-select" type="checkbox" value="AA111" name="seat[]" />
+              <label for="seat-AA111" class="seat">111</label>
+              <input id="seat-AA112" class="seat-select" type="checkbox" value="AA112" name="seat[]" />
+              <label for="seat-AA112" class="seat">112</label>
+              <input id="seat-AA113" class="seat-select" type="checkbox" value="AA113" name="seat[]" />
+              <label for="seat-AA113" class="seat">113</label>
+              <br><br>
+            <!--Z Seating-->
+            <input id="seat-Z101" class="seat-unselect" type="button" value="Z101" name="seat[]" />
+              <input id="seat-Z102" class="seat-select" type="checkbox" value="Z102" name="seat[]" />
+              <label for="seat-Z102" class="seat">Z102</label>
+              <input id="seat-Z103" class="seat-select" type="checkbox" value="Z103" name="seat[]" />
+              <label for="seat-Z103" class="seat">103</label>
+              <input id="seat-Z104" class="seat-select" type="checkbox" value="Z104" name="seat[]" />
+              <label for="seat-Z104" class="seat">104</label>
+              <input id="seat-Z105" class="seat-select" type="checkbox" value="Z105" name="seat[]" />
+              <label for="seat-Z105" class="seat">105</label>
+              <input id="seat-Z106" class="seat-select" type="checkbox" value="Z106" name="seat[]" />
+              <label for="seat-Z106" class="seat">106</label>
+              <input id="seat-Z107" class="seat-select" type="checkbox" value="Z107" name="seat[]" />
+              <label for="seat-Z107" class="seat">107</label>
+              <input id="seat-Z108" class="seat-select" type="checkbox" value="Z108" name="seat[]" />
+              <label for="seat-Z108" class="seat">108</label>
+              <input id="seat-Z109" class="seat-select" type="checkbox" value="Z109" name="seat[]" />
+              <label for="seat-Z109" class="seat">109</label>
+              <input id="seat-Z110" class="seat-select" type="checkbox" value="Z110" name="seat[]" />
+              <label for="seat-Z110" class="seat">110</label>
+              <input id="seat-Z111" class="seat-select" type="checkbox" value="Z111" name="seat[]" />
+              <label for="seat-Z111" class="seat">111</label>
+              <input id="seat-Z112" class="seat-select" type="checkbox" value="Z112" name="seat[]" />
+              <label for="seat-Z112" class="seat">112</label>
+              <input id="seat-Z113" class="seat-select" type="checkbox" value="Z113" name="seat[]" />
+              <label for="seat-Z113" class="seat">113</label>
+              <br><br>
+            <!--Y Seating-->
+            <input id="seat-Y101" class="seat-unselect" type="button" value="Y101" name="seat[]" />
+            <input id="seat-Y102" class="seat-select" type="checkbox" value="Y102" name="seat[]" />
+            <label for="seat-Y102" class="seat">Y102</label>
+            <input id="seat-Y103" class="seat-select" type="checkbox" value="Y103" name="seat[]" />
+            <label for="seat-Y103" class="seat">103</label>
+            <input id="seat-Y104" class="seat-select" type="checkbox" value="Y104" name="seat[]" />
+            <label for="seat-Y104" class="seat">104</label>
+            <input id="seat-Y105" class="seat-select" type="checkbox" value="Y105" name="seat[]" />
+            <label for="seat-Y105" class="seat">105</label>
+            <input id="seat-Y106" class="seat-select" type="checkbox" value="Y106" name="seat[]" />
+            <label for="seat-Y106" class="seat">106</label>
+            <input id="seat-Y107" class="seat-select" type="checkbox" value="Y107" name="seat[]" />
+            <label for="seat-Y107" class="seat">107</label>
+            <input id="seat-Y108" class="seat-select" type="checkbox" value="Y108" name="seat[]" />
+            <label for="seat-Y108" class="seat">108</label>
+            <input id="seat-Y109" class="seat-select" type="checkbox" value="Y109" name="seat[]" />
+            <label for="seat-Y109" class="seat">109</label>
+            <input id="seat-Y110" class="seat-select" type="checkbox" value="Y110" name="seat[]" />
+            <label for="seat-Y110" class="seat">110</label>
+            <input id="seat-Y111" class="seat-select" type="checkbox" value="Y111" name="seat[]" />
+            <label for="seat-Y111" class="seat">111</label>
+            <input id="seat-Y112" class="seat-select" type="checkbox" value="Y112" name="seat[]" />
+            <label for="seat-Y112" class="seat">112</label>
+            <input id="seat-Y113" class="seat-select" type="checkbox" value="Y113" name="seat[]" />
+            <label for="seat-Y113" class="seat">113</label>
+            <br><br>
+            <!--X Seating-->
+            <input id="seat-X101" class="seat-unselect" type="button" value="X101" name="seat[]" />
+            <input id="seat-X102" class="seat-select" type="checkbox" value="X102" name="seat[]" />
+            <label for="seat-X102" class="seat">X102</label>
+            <input id="seat-X103" class="seat-select" type="checkbox" value="X103" name="seat[]" />
+            <label for="seat-X103" class="seat">103</label>
+            <input id="seat-X104" class="seat-select" type="checkbox" value="X104" name="seat[]" />
+            <label for="seat-X104" class="seat">104</label>
+            <input id="seat-X105" class="seat-select" type="checkbox" value="X105" name="seat[]" />
+            <label for="seat-X105" class="seat">105</label>
+            <input id="seat-X106" class="seat-select" type="checkbox" value="X106" name="seat[]" />
+            <label for="seat-X106" class="seat">106</label>
+            <input id="seat-X107" class="seat-select" type="checkbox" value="X107" name="seat[]" />
+            <label for="seat-X107" class="seat">107</label>
+            <input id="seat-X108" class="seat-select" type="checkbox" value="X108" name="seat[]" />
+            <label for="seat-X108" class="seat">108</label>
+            <input id="seat-X109" class="seat-select" type="checkbox" value="X109" name="seat[]" />
+            <label for="seat-X109" class="seat">109</label>
+            <input id="seat-X110" class="seat-select" type="checkbox" value="X110" name="seat[]" />
+            <label for="seat-X110" class="seat">110</label>
+            <input id="seat-X111" class="seat-select" type="checkbox" value="X111" name="seat[]" />
+            <label for="seat-X111" class="seat">111</label>
+            <input id="seat-X112" class="seat-select" type="checkbox" value="X112" name="seat[]" />
+            <label for="seat-X112" class="seat">112</label>
+            <input id="seat-X113" class="seat-select" type="checkbox" value="X113" name="seat[]" />
+            <label for="seat-X113" class="seat">113</label>
+            <br><br>
+            <!--W Seating-->
+            <input id="seat-W101" class="seat-unselect" type="button" value="W101" name="seat[]" />
+            <input id="seat-W102" class="seat-select" type="checkbox" value="W102" name="seat[]" />
+            <label for="seat-W102" class="seat">W102</label>
+            <input id="seat-W103" class="seat-select" type="checkbox" value="W103" name="seat[]" />
+            <label for="seat-W103" class="seat">103</label>
+            <input id="seat-W104" class="seat-select" type="checkbox" value="W104" name="seat[]" />
+            <label for="seat-W104" class="seat">104</label>
+            <input id="seat-W105" class="seat-select" type="checkbox" value="W105" name="seat[]" />
+            <label for="seat-W105" class="seat">105</label>
+            <input id="seat-W106" class="seat-select" type="checkbox" value="W106" name="seat[]" />
+            <label for="seat-W106" class="seat">106</label>
+            <input id="seat-W107" class="seat-select" type="checkbox" value="W107" name="seat[]" />
+            <label for="seat-W107" class="seat">107</label>
+            <input id="seat-W108" class="seat-select" type="checkbox" value="W108" name="seat[]" />
+            <label for="seat-W108" class="seat">108</label>
+            <input id="seat-W109" class="seat-select" type="checkbox" value="W109" name="seat[]" />
+            <label for="seat-W109" class="seat">109</label>
+            <input id="seat-W110" class="seat-select" type="checkbox" value="W110" name="seat[]" />
+            <label for="seat-W110" class="seat">110</label>
+            <input id="seat-W111" class="seat-select" type="checkbox" value="W111" name="seat[]" />
+            <label for="seat-W111" class="seat">111</label>
+            <input id="seat-W112" class="seat-select" type="checkbox" value="W112" name="seat[]" />
+            <label for="seat-W112" class="seat">112</label>
+            <input id="seat-W113" class="seat-select" type="checkbox" value="W113" name="seat[]" />
+            <label for="seat-W113" class="seat">113</label> 
+            <br><br>
+            <!--V Seating-->
+            <input id="seat-V101" class="seat-unselect" type="button" value="V101" name="seat[]" />
+            <input id="seat-V102" class="seat-select" type="checkbox" value="V102" name="seat[]" />
+            <label for="seat-V102" class="seat">V102</label>
+            <input id="seat-V103" class="seat-select" type="checkbox" value="V103" name="seat[]" />
+            <label for="seat-V103" class="seat">103</label>
+            <input id="seat-V104" class="seat-select" type="checkbox" value="V104" name="seat[]" />
+            <label for="seat-V104" class="seat">104</label>
+            <input id="seat-V105" class="seat-select" type="checkbox" value="V105" name="seat[]" />
+            <label for="seat-V105" class="seat">105</label>
+            <input id="seat-V106" class="seat-select" type="checkbox" value="V106" name="seat[]" />
+            <label for="seat-V106" class="seat">106</label>
+            <input id="seat-V107" class="seat-select" type="checkbox" value="V107" name="seat[]" />
+            <label for="seat-V107" class="seat">107</label>
+            <input id="seat-V108" class="seat-select" type="checkbox" value="V108" name="seat[]" />
+            <label for="seat-V108" class="seat">108</label>
+            <input id="seat-V109" class="seat-select" type="checkbox" value="V109" name="seat[]" />
+            <label for="seat-V109" class="seat">109</label>
+            <input id="seat-V110" class="seat-select" type="checkbox" value="V110" name="seat[]" />
+            <label for="seat-V110" class="seat">110</label>
+            <input id="seat-V111" class="seat-select" type="checkbox" value="V111" name="seat[]" />
+            <label for="seat-V111" class="seat">111</label>
+            <input id="seat-V112" class="seat-select" type="checkbox" value="V112" name="seat[]" />
+            <label for="seat-V112" class="seat">112</label>
+            <input id="seat-V113" class="seat-select" type="checkbox" value="V113" name="seat[]" />
+            <label for="seat-V113" class="seat">113</label>
+            <br><br>
+            <!--U Seating-->
+            <input id="seat-U101" class="seat-unselect" type="button" value="U101" name="seat[]" />
+            <input id="seat-U102" class="seat-select" type="checkbox" value="U102" name="seat[]" />
+            <label for="seat-U102" class="seat">U102</label>
+            <input id="seat-U103" class="seat-select" type="checkbox" value="U103" name="seat[]" />
+            <label for="seat-U103" class="seat">103</label>
+            <input id="seat-U104" class="seat-select" type="checkbox" value="U104" name="seat[]" />
+            <label for="seat-U104" class="seat">104</label>
+            <input id="seat-U105" class="seat-select" type="checkbox" value="U105" name="seat[]" />
+            <label for="seat-U105" class="seat">105</label>
+            <input id="seat-U106" class="seat-select" type="checkbox" value="U106" name="seat[]" />
+            <label for="seat-U106" class="seat">106</label>
+            <input id="seat-U107" class="seat-select" type="checkbox" value="U107" name="seat[]" />
+            <label for="seat-U107" class="seat">107</label>
+            <input id="seat-U108" class="seat-select" type="checkbox" value="U108" name="seat[]" />
+            <label for="seat-U108" class="seat">108</label>
+            <input id="seat-U109" class="seat-select" type="checkbox" value="U109" name="seat[]" />
+            <label for="seat-U109" class="seat">109</label>
+            <input id="seat-U110" class="seat-select" type="checkbox" value="U110" name="seat[]" />
+            <label for="seat-U110" class="seat">110</label>
+            <input id="seat-U111" class="seat-select" type="checkbox" value="U111" name="seat[]" />
+            <label for="seat-U111" class="seat">111</label>
+            <input id="seat-U112" class="seat-select" type="checkbox" value="U112" name="seat[]" />
+            <label for="seat-U112" class="seat">112</label>
+            <input id="seat-U113" class="seat-select" type="checkbox" value="U113" name="seat[]" />
+            <label for="seat-U113" class="seat">113</label>
+            <br><br>
+            <!--T Seating-->
+            <input id="seat-T101" class="seat-unselect" type="button" value="T101" name="seat[]" />
+            <input id="seat-T102" class="seat-select" type="checkbox" value="T102" name="seat[]" />
+            <label for="seat-T102" class="seat">T102</label>
+            <input id="seat-T103" class="seat-select" type="checkbox" value="T103" name="seat[]" />
+            <label for="seat-T103" class="seat">103</label>
+            <input id="seat-T104" class="seat-select" type="checkbox" value="T104" name="seat[]" />
+            <label for="seat-T104" class="seat">104</label>
+            <input id="seat-T105" class="seat-select" type="checkbox" value="T105" name="seat[]" />
+            <label for="seat-T105" class="seat">105</label>
+            <input id="seat-T106" class="seat-select" type="checkbox" value="T106" name="seat[]" />
+            <label for="seat-T106" class="seat">106</label>
+            <input id="seat-T107" class="seat-select" type="checkbox" value="T107" name="seat[]" />
+            <label for="seat-T107" class="seat">107</label>
+            <input id="seat-T108" class="seat-select" type="checkbox" value="T108" name="seat[]" />
+            <label for="seat-T108" class="seat">108</label>
+            <input id="seat-T109" class="seat-select" type="checkbox" value="T109" name="seat[]" />
+            <label for="seat-T109" class="seat">109</label>
+            <input id="seat-T110" class="seat-select" type="checkbox" value="T110" name="seat[]" />
+            <label for="seat-T110" class="seat">110</label>
+            <input id="seat-T111" class="seat-select" type="checkbox" value="T111" name="seat[]" />
+            <label for="seat-T111" class="seat">111</label>
+            <input id="seat-T112" class="seat-select" type="checkbox" value="T112" name="seat[]" />
+            <label for="seat-T112" class="seat">112</label>
+            <input id="seat-T113" class="seat-select" type="checkbox" value="T113" name="seat[]" />
+            <label for="seat-T113" class="seat">113</label>
+            <br><br>
+            <!--S Seating-->
+            <input id="seat-S101" class="seat-unselect" type="button" value="S101" name="seat[]" />
+            <input id="seat-S102" class="seat-select" type="checkbox" value="S102" name="seat[]" />
+            <label for="seat-S102" class="seat">S102</label>
+            <input id="seat-S103" class="seat-select" type="checkbox" value="S103" name="seat[]" />
+            <label for="seat-S103" class="seat">103</label>
+            <input id="seat-S104" class="seat-select" type="checkbox" value="S104" name="seat[]" />
+            <label for="seat-S104" class="seat">104</label>
+            <input id="seat-S105" class="seat-select" type="checkbox" value="S105" name="seat[]" />
+            <label for="seat-S105" class="seat">105</label>
+            <input id="seat-S106" class="seat-select" type="checkbox" value="S106" name="seat[]" />
+            <label for="seat-S106" class="seat">106</label>
+            <input id="seat-S107" class="seat-select" type="checkbox" value="S107" name="seat[]" />
+            <label for="seat-S107" class="seat">107</label>
+            <input id="seat-S108" class="seat-select" type="checkbox" value="S108" name="seat[]" />
+            <label for="seat-S108" class="seat">108</label>
+            <input id="seat-S109" class="seat-select" type="checkbox" value="S109" name="seat[]" />
+            <label for="seat-S109" class="seat">109</label>
+            <input id="seat-S110" class="seat-select" type="checkbox" value="S110" name="seat[]" />
+            <label for="seat-S110" class="seat">110</label>
+            <input id="seat-S111" class="seat-select" type="checkbox" value="S111" name="seat[]" />
+            <label for="seat-S111" class="seat">111</label>
+            <input id="seat-S112" class="seat-select" type="checkbox" value="S112" name="seat[]" />
+            <label for="seat-S112" class="seat">112</label>
+            <input id="seat-S113" class="seat-select" type="checkbox" value="S113" name="seat[]" />
+            <label for="seat-S113" class="seat">113</label>
+            <br><br>
+            <!--R Seating-->
+            <input id="seat-R101" class="seat-select" type="checkbox" value="R101" name="seat[]" />
+            <label for="seat-R101" class="seat">R101</label>
+            <input id="seat-R102" class="seat-select" type="checkbox" value="R102" name="seat[]" />
+            <label for="seat-R102" class="seat">R102</label>
+            <input id="seat-R103" class="seat-select" type="checkbox" value="R103" name="seat[]" />
+            <label for="seat-R103" class="seat">103</label>
+            <input id="seat-R104" class="seat-select" type="checkbox" value="R104" name="seat[]" />
+            <label for="seat-R104" class="seat">104</label>
+            <input id="seat-R105" class="seat-select" type="checkbox" value="R105" name="seat[]" />
+            <label for="seat-R105" class="seat">105</label>
+            <input id="seat-R106" class="seat-select" type="checkbox" value="R106" name="seat[]" />
+            <label for="seat-R106" class="seat">106</label>
+            <input id="seat-R107" class="seat-select" type="checkbox" value="R107" name="seat[]" />
+            <label for="seat-R107" class="seat">107</label>
+            <input id="seat-R108" class="seat-select" type="checkbox" value="R108" name="seat[]" />
+            <label for="seat-R108" class="seat">108</label>
+            <input id="seat-R109" class="seat-select" type="checkbox" value="R109" name="seat[]" />
+            <label for="seat-R109" class="seat">109</label>
+            <input id="seat-R110" class="seat-select" type="checkbox" value="R110" name="seat[]" />
+            <label for="seat-R110" class="seat">110</label>
+            <input id="seat-R111" class="seat-select" type="checkbox" value="R111" name="seat[]" />
+            <label for="seat-R111" class="seat">111</label>
+            <input id="seat-R112" class="seat-select" type="checkbox" value="R112" name="seat[]" />
+            <label for="seat-R112" class="seat">112</label>
+            <input id="seat-R113" class="seat-select" type="checkbox" value="R113" name="seat[]" />
+            <label for="seat-R113" class="seat">113</label>
+            <br><br>
+            <!--Q Seating-->
+            <input id="seat-Q101" class="seat-select" type="checkbox" value="Q101" name="seat[]" />
+            <label for="seat-Q101" class="seat">Q101</label>
+            <input id="seat-Q102" class="seat-select" type="checkbox" value="Q102" name="seat[]" />
+            <label for="seat-Q102" class="seat">102</label>
+            <input id="seat-Q103" class="seat-select" type="checkbox" value="Q103" name="seat[]" />
+            <label for="seat-Q103" class="seat">103</label>
+            <input id="seat-Q104" class="seat-select" type="checkbox" value="Q104" name="seat[]" />
+            <label for="seat-Q104" class="seat">104</label>
+            <input id="seat-Q105" class="seat-select" type="checkbox" value="Q105" name="seat[]" />
+            <label for="seat-Q105" class="seat">105</label>
+            <input id="seat-Q106" class="seat-select" type="checkbox" value="Q106" name="seat[]" />
+            <label for="seat-Q106" class="seat">106</label>
+            <input id="seat-Q107" class="seat-select" type="checkbox" value="Q107" name="seat[]" />
+            <label for="seat-Q107" class="seat">107</label>
+            <input id="seat-Q108" class="seat-select" type="checkbox" value="Q108" name="seat[]" />
+            <label for="seat-Q108" class="seat">108</label>
+            <input id="seat-Q109" class="seat-select" type="checkbox" value="Q109" name="seat[]" />
+            <label for="seat-Q109" class="seat">109</label>
+            <input id="seat-Q110" class="seat-select" type="checkbox" value="Q110" name="seat[]" />
+            <label for="seat-Q110" class="seat">110</label>
+            <input id="seat-Q111" class="seat-select" type="checkbox" value="Q111" name="seat[]" />
+            <label for="seat-Q111" class="seat">111</label>
+            <input id="seat-Q112" class="seat-select" type="checkbox" value="Q112" name="seat[]" />
+            <label for="seat-Q112" class="seat">112</label>
+            <input id="seat-Q113" class="seat-select" type="checkbox" value="Q113" name="seat[]" />
+            <label for="seat-Q113" class="seat">113</label>
+            <br><br>
+            <!--P Seating-->
+            <input id="seat-P101" class="seat-select" type="checkbox" value="P101" name="seat[]" />
+            <label for="seat-P101" class="seat">P101</label>
+            <input id="seat-P102" class="seat-select" type="checkbox" value="P102" name="seat[]" />
+            <label for="seat-P102" class="seat">102</label>
+            <input id="seat-P103" class="seat-select" type="checkbox" value="P103" name="seat[]" />
+            <label for="seat-P103" class="seat">103</label>
+            <input id="seat-P104" class="seat-select" type="checkbox" value="P104" name="seat[]" />
+            <label for="seat-P104" class="seat">104</label>
+            <input id="seat-P105" class="seat-select" type="checkbox" value="P105" name="seat[]" />
+            <label for="seat-P105" class="seat">105</label>
+            <input id="seat-P106" class="seat-select" type="checkbox" value="P106" name="seat[]" />
+            <label for="seat-P106" class="seat">106</label>
+            <input id="seat-P107" class="seat-select" type="checkbox" value="P107" name="seat[]" />
+            <label for="seat-P107" class="seat">107</label>
+            <input id="seat-P108" class="seat-select" type="checkbox" value="P108" name="seat[]" />
+            <label for="seat-P108" class="seat">108</label>
+            <input id="seat-P109" class="seat-select" type="checkbox" value="P109" name="seat[]" />
+            <label for="seat-P109" class="seat">109</label>
+            <input id="seat-P110" class="seat-select" type="checkbox" value="P110" name="seat[]" />
+            <label for="seat-P110" class="seat">110</label>
+            <input id="seat-P111" class="seat-select" type="checkbox" value="P111" name="seat[]" />
+            <label for="seat-P111" class="seat">111</label>
+            <input id="seat-P112" class="seat-select" type="checkbox" value="P112" name="seat[]" />
+            <label for="seat-P112" class="seat">112</label>
+            <input id="seat-P113" class="seat-select" type="checkbox" value="P113" name="seat[]" />
+            <label for="seat-P113" class="seat">113</label>
+            <br><br>
+            <!--N Seating-->
+            <input id="seat-N101" class="seat-select" type="checkbox" value="N101" name="seat[]" />
+            <label for="seat-N101" class="seat">N101</label>
+            <input id="seat-N102" class="seat-select" type="checkbox" value="N102" name="seat[]" />
+            <label for="seat-N102" class="seat">102</label>
+            <input id="seat-N103" class="seat-select" type="checkbox" value="N103" name="seat[]" />
+            <label for="seat-N103" class="seat">103</label>
+            <input id="seat-N104" class="seat-select" type="checkbox" value="N104" name="seat[]" />
+            <label for="seat-N104" class="seat">104</label>
+            <input id="seat-N105" class="seat-select" type="checkbox" value="N105" name="seat[]" />
+            <label for="seat-N105" class="seat">105</label>
+            <input id="seat-N106" class="seat-select" type="checkbox" value="N106" name="seat[]" />
+            <label for="seat-N106" class="seat">106</label>
+            <input id="seat-N107" class="seat-select" type="checkbox" value="N107" name="seat[]" />
+            <label for="seat-N107" class="seat">107</label>
+            <input id="seat-N108" class="seat-select" type="checkbox" value="N108" name="seat[]" />
+            <label for="seat-N108" class="seat">108</label>
+            <input id="seat-N109" class="seat-select" type="checkbox" value="N109" name="seat[]" />
+            <label for="seat-N109" class="seat">109</label>
+            <input id="seat-N110" class="seat-select" type="checkbox" value="N110" name="seat[]" />
+            <label for="seat-N110" class="seat">110</label>
+            <input id="seat-N111" class="seat-select" type="checkbox" value="N111" name="seat[]" />
+            <label for="seat-N111" class="seat">111</label>
+            <input id="seat-N112" class="seat-select" type="checkbox" value="N112" name="seat[]" />
+            <label for="seat-N112" class="seat">112</label>
+            <input id="seat-N113" class="seat-select" type="checkbox" value="N113" name="seat[]" />
+            <label for="seat-N113" class="seat">113</label>
+            <br><br>
+            <!--M Seating-->
+            <input id="seat-M101" class="seat-unselect" type="button" value="M101" name="seat[]" />
+            <input id="seat-M102" class="seat-select" type="checkbox" value="M102" name="seat[]" />
+            <label for="seat-M102" class="seat">M102</label>
+            <input id="seat-M103" class="seat-select" type="checkbox" value="M103" name="seat[]" />
+            <label for="seat-M103" class="seat">103</label>
+            <input id="seat-M104" class="seat-select" type="checkbox" value="M104" name="seat[]" />
+            <label for="seat-M104" class="seat">104</label>
+            <input id="seat-M105" class="seat-select" type="checkbox" value="M105" name="seat[]" />
+            <label for="seat-M105" class="seat">105</label>
+            <input id="seat-M106" class="seat-select" type="checkbox" value="M106" name="seat[]" />
+            <label for="seat-M106" class="seat">106</label>
+            <input id="seat-M107" class="seat-select" type="checkbox" value="M107" name="seat[]" />
+            <label for="seat-M107" class="seat">107</label>
+            <input id="seat-M108" class="seat-select" type="checkbox" value="M108" name="seat[]" />
+            <label for="seat-M108" class="seat">108</label>
+            <input id="seat-M109" class="seat-select" type="checkbox" value="M109" name="seat[]" />
+            <label for="seat-M109" class="seat">109</label>
+            <input id="seat-M110" class="seat-select" type="checkbox" value="M110" name="seat[]" />
+            <label for="seat-M110" class="seat">110</label>
+            <input id="seat-M111" class="seat-select" type="checkbox" value="M111" name="seat[]" />
+            <label for="seat-M111" class="seat">111</label>
+            <input id="seat-M112" class="seat-select" type="checkbox" value="M112" name="seat[]" />
+            <label for="seat-M112" class="seat">112</label>
+            <input id="seat-M113" class="seat-select" type="checkbox" value="M113" name="seat[]" />
+            <label for="seat-M113" class="seat">113</label>
+            <br><br>
+            <!--L Seating-->
+            <input id="seat-L101" class="seat-unselect" type="button" value="L101" name="seat[]" />
+            <input id="seat-H6" class="seat-select-handicap" type="checkbox" value="H6" name="seat[]" />
+            <label for="seat-H6" class="seat-handicap">H6</label>
+            <input id="seat-L103" class="seat-select" type="checkbox" value="L103" name="seat[]" />
+            <label for="seat-L103" class="seat">L103</label>
+            <input id="seat-L104" class="seat-select" type="checkbox" value="L104" name="seat[]" />
+            <label for="seat-L104" class="seat">104</label>
+            <input id="seat-L105" class="seat-select" type="checkbox" value="L105" name="seat[]" />
+            <label for="seat-L105" class="seat">105</label>
+            <input id="seat-L106" class="seat-select" type="checkbox" value="L106" name="seat[]" />
+            <label for="seat-L106" class="seat">106</label>
+            <input id="seat-L107" class="seat-select" type="checkbox" value="L107" name="seat[]" />
+            <label for="seat-L107" class="seat">107</label>
+            <input id="seat-L108" class="seat-select" type="checkbox" value="L108" name="seat[]" />
+            <label for="seat-L108" class="seat">108</label>
+            <input id="seat-L109" class="seat-select" type="checkbox" value="L109" name="seat[]" />
+            <label for="seat-L109" class="seat">109</label>
+            <input id="seat-L110" class="seat-select" type="checkbox" value="L110" name="seat[]" />
+            <label for="seat-L110" class="seat">110</label>
+            <input id="seat-L111" class="seat-select" type="checkbox" value="L111" name="seat[]" />
+            <label for="seat-L111" class="seat">111</label>
+            <input id="seat-L112" class="seat-select" type="checkbox" value="L112" name="seat[]" />
+            <label for="seat-L112" class="seat">112</label>
+            <input id="seat-L113" class="seat-select" type="checkbox" value="L113" name="seat[]" />
+            <label for="seat-L113" class="seat">113</label>
+            <br><br>
+            <!--K Seating-->
+            <input id="seat-K101" class="seat-unselect" type="button" value="K102" name="seat[]" />
+            <input id="seat-K102" class="seat-select" type="checkbox" value="K102" name="seat[]" />
+            <label for="seat-K102" class="seat">K102</label>
+            <input id="seat-K103" class="seat-select" type="checkbox" value="K103" name="seat[]" />
+            <label for="seat-K103" class="seat">103</label>
+            <input id="seat-K104" class="seat-select" type="checkbox" value="K104" name="seat[]" />
+            <label for="seat-K104" class="seat">104</label>
+            <input id="seat-K105" class="seat-select" type="checkbox" value="K105" name="seat[]" />
+            <label for="seat-K105" class="seat">105</label>
+            <input id="seat-K106" class="seat-select" type="checkbox" value="K106" name="seat[]" />
+            <label for="seat-K106" class="seat">106</label>
+            <input id="seat-K107" class="seat-select" type="checkbox" value="K107" name="seat[]" />
+            <label for="seat-K107" class="seat">107</label>
+            <input id="seat-K108" class="seat-select" type="checkbox" value="K108" name="seat[]" />
+            <label for="seat-K108" class="seat">108</label>
+            <input id="seat-K109" class="seat-select" type="checkbox" value="K109" name="seat[]" />
+            <label for="seat-K109" class="seat">109</label>
+            <input id="seat-K110" class="seat-select" type="checkbox" value="K110" name="seat[]" />
+            <label for="seat-K110" class="seat">110</label>
+            <input id="seat-K111" class="seat-select" type="checkbox" value="K111" name="seat[]" />
+            <label for="seat-K111" class="seat">111</label>
+            <input id="seat-K112" class="seat-select" type="checkbox" value="K112" name="seat[]" />
+            <label for="seat-K112" class="seat">112</label>
+            <input id="seat-K113" class="seat-select" type="checkbox" value="K113" name="seat[]" />
+            <label for="seat-K113" class="seat">113</label>
+            <br><br>
+            <!--J Seating-->
+            <input id="seat-J101" class="seat-select" type="checkbox" value="J101" name="seat[]" />
+            <label for="seat-J101" class="seat">J101</label>
+            <input id="seat-J102" class="seat-select" type="checkbox" value="J102" name="seat[]" />
+            <label for="seat-J102" class="seat">J102</label>
+            <input id="seat-J103" class="seat-select" type="checkbox" value="J103" name="seat[]" />
+            <label for="seat-J103" class="seat">103</label>
+            <input id="seat-J104" class="seat-select" type="checkbox" value="J104" name="seat[]" />
+            <label for="seat-J104" class="seat">104</label>
+            <input id="seat-J105" class="seat-select" type="checkbox" value="J105" name="seat[]" />
+            <label for="seat-J105" class="seat">105</label>
+            <input id="seat-J106" class="seat-select" type="checkbox" value="J106" name="seat[]" />
+            <label for="seat-J106" class="seat">106</label>
+            <input id="seat-J107" class="seat-select" type="checkbox" value="J107" name="seat[]" />
+            <label for="seat-J107" class="seat">107</label>
+            <input id="seat-J108" class="seat-select" type="checkbox" value="J108" name="seat[]" />
+            <label for="seat-J108" class="seat">108</label>
+            <input id="seat-J109" class="seat-select" type="checkbox" value="J109" name="seat[]" />
+            <label for="seat-J109" class="seat">109</label>
+            <input id="seat-J110" class="seat-select" type="checkbox" value="J110" name="seat[]" />
+            <label for="seat-J110" class="seat">110</label>
+            <input id="seat-J111" class="seat-select" type="checkbox" value="J111" name="seat[]" />
+            <label for="seat-J111" class="seat">111</label>
+            <input id="seat-J112" class="seat-select" type="checkbox" value="J112" name="seat[]" />
+            <label for="seat-J112" class="seat">112</label>
+            <input id="seat-J113" class="seat-select" type="checkbox" value="J113" name="seat[]" />
+            <label for="seat-J113" class="seat">113</label>
+            <br><br>
+            <!--H Seating-->
+            <input id="seat-H101" class="seat-select" type="checkbox" value="H101" name="seat[]" />
+            <label for="seat-H101" class="seat">H101</label>
+            <input id="seat-H102" class="seat-select" type="checkbox" value="H102" name="seat[]" />
+            <label for="seat-H102" class="seat">102</label>
+            <input id="seat-H103" class="seat-select" type="checkbox" value="H103" name="seat[]" />
+            <label for="seat-H103" class="seat">103</label>
+            <input id="seat-H104" class="seat-select" type="checkbox" value="H104" name="seat[]" />
+            <label for="seat-H104" class="seat">104</label>
+            <input id="seat-H105" class="seat-select" type="checkbox" value="H105" name="seat[]" />
+            <label for="seat-H105" class="seat">105</label>
+            <input id="seat-H106" class="seat-select" type="checkbox" value="H106" name="seat[]" />
+            <label for="seat-H106" class="seat">106</label>
+            <input id="seat-H107" class="seat-select" type="checkbox" value="H107" name="seat[]" />
+            <label for="seat-H107" class="seat">107</label>
+            <input id="seat-H108" class="seat-select" type="checkbox" value="H108" name="seat[]" />
+            <label for="seat-H108" class="seat">108</label>
+            <input id="seat-H109" class="seat-select" type="checkbox" value="H109" name="seat[]" />
+            <label for="seat-H109" class="seat">109</label>
+            <input id="seat-H110" class="seat-select" type="checkbox" value="H110" name="seat[]" />
+            <label for="seat-H110" class="seat">110</label>
+            <input id="seat-H111" class="seat-select" type="checkbox" value="H111" name="seat[]" />
+            <label for="seat-H111" class="seat">111</label>
+            <input id="seat-H112" class="seat-select" type="checkbox" value="H112" name="seat[]" />
+            <label for="seat-H112" class="seat">112</label>
+            <input id="seat-H113" class="seat-select" type="checkbox" value="H113" name="seat[]" />
+            <label for="seat-H113" class="seat">113</label>
+            <br><br>
+            <!--G Seating-->
+            <input id="seat-G101" class="seat-select" type="checkbox" value="G101" name="seat[]" />
+            <label for="seat-G101" class="seat">G101</label>
+            <input id="seat-G102" class="seat-select" type="checkbox" value="G102" name="seat[]" />
+            <label for="seat-G102" class="seat">G102</label>
+            <input id="seat-G103" class="seat-select" type="checkbox" value="G103" name="seat[]" />
+            <label for="seat-G103" class="seat">103</label>
+            <input id="seat-G104" class="seat-select" type="checkbox" value="G104" name="seat[]" />
+            <label for="seat-G104" class="seat">104</label>
+            <input id="seat-G105" class="seat-select" type="checkbox" value="G105" name="seat[]" />
+            <label for="seat-G105" class="seat">105</label>
+            <input id="seat-G106" class="seat-select" type="checkbox" value="G106" name="seat[]" />
+            <label for="seat-G106" class="seat">106</label>
+            <input id="seat-G107" class="seat-select" type="checkbox" value="G107" name="seat[]" />
+            <label for="seat-G107" class="seat">107</label>
+            <input id="seat-G108" class="seat-select" type="checkbox" value="G108" name="seat[]" />
+            <label for="seat-G108" class="seat">108</label>
+            <input id="seat-G109" class="seat-select" type="checkbox" value="G109" name="seat[]" />
+            <label for="seat-G109" class="seat">109</label>
+            <input id="seat-G110" class="seat-select" type="checkbox" value="G110" name="seat[]" />
+            <label for="seat-G110" class="seat">110</label>
+            <input id="seat-G111" class="seat-select" type="checkbox" value="G111" name="seat[]" />
+            <label for="seat-G111" class="seat">111</label>
+            <input id="seat-G112" class="seat-select" type="checkbox" value="G112" name="seat[]" />
+            <label for="seat-G112" class="seat">112</label>
+            <input id="seat-G113" class="seat-select" type="checkbox" value="G113" name="seat[]" />
+            <label for="seat-G113" class="seat">113</label>
+            <br><br>
+            <!--F Seating-->
+            <input id="seat-F101" class="seat-unselect" type="button" value="F101" name="seat[]" />
+            <input id="seat-F102" class="seat-select" type="checkbox" value="F102" name="seat[]" />
+            <label for="seat-F102" class="seat">F102</label>
+            <input id="seat-F103" class="seat-select" type="checkbox" value="F103" name="seat[]" />
+            <label for="seat-F103" class="seat">103</label>
+            <input id="seat-F104" class="seat-select" type="checkbox" value="F104" name="seat[]" />
+            <label for="seat-F104" class="seat">104</label>
+            <input id="seat-F105" class="seat-select" type="checkbox" value="F105" name="seat[]" />
+            <label for="seat-F105" class="seat">105</label>
+            <input id="seat-F106" class="seat-select" type="checkbox" value="F106" name="seat[]" />
+            <label for="seat-F106" class="seat">106</label>
+            <input id="seat-F107" class="seat-select" type="checkbox" value="F107" name="seat[]" />
+            <label for="seat-F107" class="seat">107</label>
+            <input id="seat-F108" class="seat-select" type="checkbox" value="F108" name="seat[]" />
+            <label for="seat-F108" class="seat">108</label>
+            <input id="seat-F109" class="seat-select" type="checkbox" value="F109" name="seat[]" />
+            <label for="seat-F109" class="seat">109</label>
+            <input id="seat-F110" class="seat-select" type="checkbox" value="F110" name="seat[]" />
+            <label for="seat-F110" class="seat">110</label>
+            <input id="seat-F111" class="seat-select" type="checkbox" value="F111" name="seat[]" />
+            <label for="seat-F111" class="seat">111</label>
+            <input id="seat-F112" class="seat-select" type="checkbox" value="F112" name="seat[]" />
+            <label for="seat-F112" class="seat">112</label>
+            <input id="seat-F113" class="seat-select" type="checkbox" value="F113" name="seat[]" />
+            <label for="seat-F113" class="seat">113</label>
+            <br><br>
+            <!--E Seating-->
+            <input id="seat-E101" class="seat-unselect" type="button" value="E101" name="seat[]" />
+            <input id="seat-E102" class="seat-unselect" type="button" value="E102" name="seat[]" />
+            <input id="seat-E103" class="seat-select" type="checkbox" value="E103" name="seat[]" />
+            <label for="seat-E103" class="seat">E103</label>
+            <input id="seat-E104" class="seat-select" type="checkbox" value="E104" name="seat[]" />
+            <label for="seat-E104" class="seat">104</label>
+            <input id="seat-E105" class="seat-select" type="checkbox" value="E105" name="seat[]" />
+            <label for="seat-E105" class="seat">105</label>
+            <input id="seat-E106" class="seat-select" type="checkbox" value="E106" name="seat[]" />
+            <label for="seat-E106" class="seat">106</label>
+            <input id="seat-E107" class="seat-select" type="checkbox" value="E107" name="seat[]" />
+            <label for="seat-E107" class="seat">107</label>
+            <input id="seat-E108" class="seat-select" type="checkbox" value="E108" name="seat[]" />
+            <label for="seat-E108" class="seat">108</label>
+            <input id="seat-E109" class="seat-select" type="checkbox" value="E109" name="seat[]" />
+            <label for="seat-E109" class="seat">109</label>
+            <input id="seat-E110" class="seat-select" type="checkbox" value="E110" name="seat[]" />
+            <label for="seat-E110" class="seat">110</label>
+            <input id="seat-E111" class="seat-select" type="checkbox" value="E111" name="seat[]" />
+            <label for="seat-E111" class="seat">110</label>
+            <input id="seat-E112" class="seat-select" type="checkbox" value="E112" name="seat[]" />
+            <label for="seat-E112" class="seat">112</label>
+            <input id="seat-E113" class="seat-select" type="checkbox" value="E113" name="seat[]" />
+            <label for="seat-E113" class="seat">113</label> 
+            <br><br>
+            <!--D Seating-->
+            <input id="seat-D101" class="seat-unselect" type="button" value="D101" name="seat[]" />
+            <input id="seat-D102" class="seat-unselect" type="button" value="D102" name="seat[]" />
+            <input id="seat-D103" class="seat-select" type="checkbox" value="D103" name="seat[]" />
+            <label for="seat-D103" class="seat">D103</label>
+            <input id="seat-D104" class="seat-select" type="checkbox" value="D104" name="seat[]" />
+            <label for="seat-D104" class="seat">104</label>
+            <input id="seat-D105" class="seat-select" type="checkbox" value="D105" name="seat[]" />
+            <label for="seat-D105" class="seat">105</label>
+            <input id="seat-D106" class="seat-select" type="checkbox" value="D106" name="seat[]" />
+            <label for="seat-D106" class="seat">106</label>
+            <input id="seat-D107" class="seat-select" type="checkbox" value="D107" name="seat[]" />
+            <label for="seat-D107" class="seat">107</label>
+            <input id="seat-D108" class="seat-select" type="checkbox" value="D108" name="seat[]" />
+            <label for="seat-D108" class="seat">108</label>
+            <input id="seat-D109" class="seat-select" type="checkbox" value="D109" name="seat[]" />
+            <label for="seat-D109" class="seat">109</label>
+            <input id="seat-D110" class="seat-select" type="checkbox" value="D110" name="seat[]" />
+            <label for="seat-D110" class="seat">110</label>
+            <input id="seat-D111" class="seat-select" type="checkbox" value="D111" name="seat[]" />
+            <label for="seat-D111" class="seat">111</label>
+            <input id="seat-D112" class="seat-select" type="checkbox" value="D112" name="seat[]" />
+            <label for="seat-D112" class="seat">112</label>
+            <input id="seat-D113" class="seat-select" type="checkbox" value="D113" name="seat[]" />
+            <label for="seat-D113" class="seat">113</label>
+            <br><br>
+            <!--C Seating-->
+            <input id="seat-C101" class="seat-unselect" type="button" value="C101" name="seat[]" />
+            <input id="seat-C102" class="seat-unselect" type="button" value="C102" name="seat[]" />
+            <input id="seat-C103" class="seat-unselect" type="button" value="C103" name="seat[]" />
+            <input id="seat-C104" class="seat-select" type="checkbox" value="C104" name="seat[]" />
+            <label for="seat-C104" class="seat">C104</label>
+            <input id="seat-C105" class="seat-select" type="checkbox" value="C105" name="seat[]" />
+            <label for="seat-C105" class="seat">105</label>
+            <input id="seat-C106" class="seat-select" type="checkbox" value="C106" name="seat[]" />
+            <label for="seat-C106" class="seat">106</label>
+            <input id="seat-C107" class="seat-select" type="checkbox" value="C107" name="seat[]" />
+            <label for="seat-C107" class="seat">107</label>
+            <input id="seat-C108" class="seat-select" type="checkbox" value="C108" name="seat[]" />
+            <label for="seat-C108" class="seat">108</label>
+            <input id="seat-C109" class="seat-select" type="checkbox" value="C109" name="seat[]" />
+            <label for="seat-C109" class="seat">109</label>
+            <input id="seat-C110" class="seat-select" type="checkbox" value="C110" name="seat[]" />
+            <label for="seat-C110" class="seat">110</label>
+            <input id="seat-C111" class="seat-select" type="checkbox" value="C111" name="seat[]" />
+            <label for="seat-C111" class="seat">111</label>
+            <input id="seat-C112" class="seat-select" type="checkbox" value="C112" name="seat[]" />
+            <label for="seat-C112" class="seat">112</label>
+            <input id="seat-C113" class="seat-select" type="checkbox" value="C113" name="seat[]" />
+            <label for="seat-C113" class="seat">113</label>
+            <br><br>
+            <!--B Seating-->
+            <input id="seat-B101" class="seat-unselect" type="button" value="B101" name="seat[]" />
+            <input id="seat-B102" class="seat-unselect" type="button" value="B102" name="seat[]" />
+            <input id="seat-B103" class="seat-unselect" type="button" value="B103" name="seat[]" />
+            <input id="seat-B104" class="seat-unselect" type="button" value="B104" name="seat[]" />
+            <input id="seat-B105" class="seat-unselect" type="button" value="B105" name="seat[]" />
+            <input id="seat-B106" class="seat-select" type="checkbox" value="B106" name="seat[]" />
+            <label for="seat-B106" class="seat">B106</label>
+            <input id="seat-B107" class="seat-select" type="checkbox" value="B107" name="seat[]" />
+            <label for="seat-B107" class="seat">107</label>
+            <input id="seat-B108" class="seat-select" type="checkbox" value="B108" name="seat[]" />
+            <label for="seat-B108" class="seat">108</label>
+            <input id="seat-B109" class="seat-select" type="checkbox" value="B109" name="seat[]" />
+            <label for="seat-B109" class="seat">109</label>
+            <input id="seat-B110" class="seat-select" type="checkbox" value="B110" name="seat[]" />
+            <label for="seat-B110" class="seat">110</label>
+            <input id="seat-B111" class="seat-select" type="checkbox" value="B111" name="seat[]" />
+            <label for="seat-B111" class="seat">111</label>
+            <input id="seat-B112" class="seat-select" type="checkbox" value="B112" name="seat[]" />
+            <label for="seat-B112" class="seat">112</label>
+            <input id="seat-B113" class="seat-select" type="checkbox" value="B113" name="seat[]" />
+            <label for="seat-B113" class="seat">113</label> 
+            <br><br>
+            <!--A Seating-->
+            <input id="seat-A101" class="seat-unselect" type="button" value="B101" name="seat[]" />
+           <input id="seat-A102" class="seat-unselect" type="button" value="B102" name="seat[]" />
+           <input id="seat-A103" class="seat-unselect" type="button" value="B103" name="seat[]" />
+           <input id="seat-A104" class="seat-unselect" type="button" value="B104" name="seat[]" />
+           <input id="seat-A105" class="seat-unselect" type="button" value="B105" name="seat[]" />
+           <input id="seat-A106" class="seat-unselect" type="button" value="B106" name="seat[]" />
+           <input id="seat-A101" class="seat-unselect" type="button" value="B101" name="seat[]" />
+           <input id="seat-A102" class="seat-unselect" type="button" value="B102" name="seat[]" />
+           <input id="seat-A103" class="seat-unselect" type="button" value="B103" name="seat[]" />
+           <input id="seat-A104" class="seat-unselect" type="button" value="B104" name="seat[]" />
+           <input id="seat-A105" class="seat-unselect" type="button" value="B105" name="seat[]" />
+           <input id="seat-A106" class="seat-select" type="checkbox" value="B106" name="seat[]" />
+           <input id="seat-A106" class="seat-select" type="checkbox" value="B106" name="seat[]" />
+          </section>
+        </div>
+<!---------------------------------------------Aisle Child------------------------------------------->
+   <div class="child_aisle1" id ="test_aisle1">
+    <label style="text-align: center; color:black;">Aisle</label><br><br>
+    <!-- class="seat-unselect" -->
+   </div>
+<!---------------------------------------------Middle Child------------------------------------------->
+        <div class="child_middle">
+          <section id="seats">
+            <!--DD Seating-->
+            <input id="seat-DD114" class="seat-unselect" type="button" value="DD114" name="seat[]" />
+            <input id="seat-DD115" class="seat-unselect" type="button" value="DD115" name="seat[]" />
+            <input id="seat-DD116" class="seat-unselect" type="button" value="DD116" name="seat[]" />
+            <input id="seat-DD117" class="seat-unselect" type="button" value="DD117" name="seat[]" />
+            <input id="seat-DD118" class="seat-unselect" type="button" value="DD118" name="seat[]" />
+            <input id="seat-DD119" class="seat-unselect" type="button" value="DD119" name="seat[]" />
+            <input id="seat-DD120" class="seat-unselect" type="button" value="DD120" name="seat[]" />
+            <input id="seat-DD121" class="seat-unselect" type="button" value="DD121" name="seat[]" />
+            <input id="seat-DD122" class="seat-unselect" type="button" value="DD122" name="seat[]" />
+            <input id="seat-DD123" class="seat-unselect" type="button" value="DD123" name="seat[]" />
+            <input id="seat-DD124" class="seat-unselect" type="button" value="DD124" name="seat[]" />
+          <br><br>
+          <!--CC Seating-->
+            <input id="seat-CC115" class="seat-unselect" type="button" value="CC114" name="seat[]" />
+            <input id="seat-CC115" class="seat-unselect" type="button" value="CC115" name="seat[]" />
+            <input id="seat-CC116" class="seat-unselect" type="button" value="CC116" name="seat[]" />
+            <input id="seat-CC117" class="seat-unselect" type="button" value="CC117" name="seat[]" />
+            <input id="seat-CC118" class="seat-unselect" type="button" value="CC118" name="seat[]" />
+            <input id="seat-CC119" class="seat-unselect" type="button" value="CC119" name="seat[]" />
+            <input id="seat-CC120" class="seat-unselect" type="button" value="CC120" name="seat[]" />
+            <input id="seat-CC121" class="seat-unselect" type="button" value="CC121" name="seat[]" />
+            <input id="seat-CC122" class="seat-unselect" type="button" value="CC122" name="seat[]" />
+            <input id="seat-CC123" class="seat-unselect" type="button" value="CC123" name="seat[]" />
+            <input id="seat-CC124" class="seat-unselect" type="button" value="CC124" name="seat[]" />
+          <br><br>
+          <!--BB Seating-->
+          <input id="seat-BB114" class="seat-unselect" type="button" value="BB114" name="seat[]" />
+          <input id="seat-H4" class="seat-select-handicap" type="checkbox" value="H4" name="seat[]" />
+            <label for="seat-H4" class="seat-handicap">H4</label>
+          <input id="seat-BB115" class="seat-select" type="checkbox" value="BB115" name="seat[]" />
+          <label for="seat-BB115" class="seat">115</label>
+          <input id="seat-BB116" class="seat-select" type="checkbox" value="BB116" name="seat[]" />
+          <label for="seat-BB116" class="seat">116</label>
+          <input id="seat-BB117" class="seat-select" type="checkbox" value="BB117" name="seat[]" />
+          <label for="seat-BB117" class="seat">117</label>
+          <input id="seat-BB118" class="seat-select" type="checkbox" value="BB118" name="seat[]" />
+          <label for="seat-BB118" class="seat">118</label>
+          <input id="seat-BB119" class="seat-select" type="checkbox" value="BB119" name="seat[]" />
+          <label for="seat-BB119" class="seat">119</label>
+          <input id="seat-BB120" class="seat-select" type="checkbox" value="BB120" name="seat[]" />
+          <label for="seat-BB120" class="seat">120</label>
+          <input id="seat-BB121" class="seat-select" type="checkbox" value="BB121" name="seat[]" />
+          <label for="seat-BB121" class="seat">121</label>
+          <input id="seat-BB122" class="seat-select" type="checkbox" value="BB122" name="seat[]" />
+          <label for="seat-BB122" class="seat">122</label>
+          <input id="seat-BB123" class="seat-select" type="checkbox" value="BB123" name="seat[]" />
+          <label for="seat-BB123" class="seat">123</label>
+          <input id="seat-BB124" class="seat-select" type="checkbox" value="BB124" name="seat[]" />
+          <label for="seat-BB124" class="seat">124</label>
+          <input id="seat-H5" class="seat-select-handicap" type="checkbox" value="H5" name="seat[]" />
+          <label for="seat-H5" class="seat-handicap">H5</label>
+          <br><br>
+          <!--AA Seating-->
+          <input id="seat-AA114" class="seat-select" type="checkbox" value="AA114" name="seat[]" />
+          <label for="seat-AA114" class="seat">114</label>
+          <input id="seat-AA115" class="seat-select" type="checkbox" value="AA115" name="seat[]" />
+          <label for="seat-AA115" class="seat">115</label>
+          <input id="seat-AA116" class="seat-select" type="checkbox" value="AA116" name="seat[]" />
+          <label for="seat-AA116" class="seat">116</label>
+          <input id="seat-AA117" class="seat-select" type="checkbox" value="AA117" name="seat[]" />
+          <label for="seat-AA117" class="seat">117</label>
+          <input id="seat-AA118" class="seat-select" type="checkbox" value="AA118" name="seat[]" />
+          <label for="seat-AA118" class="seat">118</label>
+          <input id="seat-AA119" class="seat-select" type="checkbox" value="AA119" name="seat[]" />
+          <label for="seat-AA119" class="seat">119</label>
+          <input id="seat-AA120" class="seat-select" type="checkbox" value="AA120" name="seat[]" />
+          <label for="seat-AA120" class="seat">120</label>
+          <input id="seat-AA121" class="seat-select" type="checkbox" value="AA121" name="seat[]" />
+          <label for="seat-AA121" class="seat">121</label>
+          <input id="seat-AA122" class="seat-select" type="checkbox" value="AA122" name="seat[]" />
+          <label for="seat-AA122" class="seat">122</label>
+          <input id="seat-AA123" class="seat-select" type="checkbox" value="AA123" name="seat[]" />
+          <label for="seat-AA123" class="seat">123</label>
+          <input id="seat-AA124" class="seat-select" type="checkbox" value="AA124" name="seat[]" />
+          <label for="seat-AA124" class="seat">124</label>
+          <input id="seat-AA125" class="seat-select" type="checkbox" value="AA125" name="seat[]" />
+          <label for="seat-AA125" class="seat">125</label>
+          <input id="seat-AA126" class="seat-select" type="checkbox" value="AA126" name="seat[]" />
+          <label for="seat-AA126" class="seat">126</label>
+          <input id="seat-AA127" class="seat-select" type="checkbox" value="AA127" name="seat[]" />
+          <label for="seat-AA127" class="seat">127</label>
+          <br><br>
+          <!--Z Seating-->
+          <input id="seat-Z114" class="seat-select" type="checkbox" value="Z114" name="seat[]" />
+          <label for="seat-Z114" class="seat">114</label>
+          <input id="seat-Z115" class="seat-select" type="checkbox" value="Z115" name="seat[]" />
+          <label for="seat-Z115" class="seat">115</label>
+          <input id="seat-Z116" class="seat-select" type="checkbox" value="Z116" name="seat[]" />
+          <label for="seat-Z116" class="seat">116</label>
+          <input id="seat-Z117" class="seat-select" type="checkbox" value="Z117" name="seat[]" />
+          <label for="seat-Z117" class="seat">117</label>
+          <input id="seat-Z118" class="seat-select" type="checkbox" value="Z118" name="seat[]" />
+          <label for="seat-Z118" class="seat">118</label>
+          <input id="seat-Z119" class="seat-select" type="checkbox" value="Z119" name="seat[]" />
+          <label for="seat-Z119" class="seat">119</label>
+          <input id="seat-Z120" class="seat-select" type="checkbox" value="Z120" name="seat[]" />
+          <label for="seat-Z120" class="seat">120</label>
+          <input id="seat-Z121" class="seat-select" type="checkbox" value="Z121" name="seat[]" />
+          <label for="seat-Z121" class="seat">121</label>
+          <input id="seat-Z122" class="seat-select" type="checkbox" value="Z122" name="seat[]" />
+          <label for="seat-Z122" class="seat">122</label>
+          <input id="seat-Z123" class="seat-select" type="checkbox" value="Z123" name="seat[]" />
+          <label for="seat-Z123" class="seat">123</label>
+          <input id="seat-Z124" class="seat-select" type="checkbox" value="Z124" name="seat[]" />
+          <label for="seat-Z124" class="seat">124</label>
+          <input id="seat-Z125" class="seat-select" type="checkbox" value="Z125" name="seat[]" />
+          <label for="seat-Z125" class="seat">125</label>
+          <input id="seat-Z126" class="seat-select" type="checkbox" value="Z126" name="seat[]" />
+          <label for="seat-Z126" class="seat">126</label>
+          <br><br>
+          <!--Y Seating-->
+          <input id="seat-Y114" class="seat-select" type="checkbox" value="Y114" name="seat[]" />
+          <label for="seat-Y114" class="seat">114</label>
+          <input id="seat-Y115" class="seat-select" type="checkbox" value="Y115" name="seat[]" />
+          <label for="seat-Y115" class="seat">115</label>
+          <input id="seat-Y116" class="seat-select" type="checkbox" value="Y116" name="seat[]" />
+          <label for="seat-Y116" class="seat">116</label>
+          <input id="seat-Y117" class="seat-select" type="checkbox" value="Y117" name="seat[]" />
+          <label for="seat-Y117" class="seat">117</label>
+          <input id="seat-Y118" class="seat-select" type="checkbox" value="Y118" name="seat[]" />
+          <label for="seat-Y118" class="seat">118</label>
+          <input id="seat-Y119" class="seat-select" type="checkbox" value="Y119" name="seat[]" />
+          <label for="seat-Y119" class="seat">119</label>
+          <input id="seat-Y120" class="seat-select" type="checkbox" value="Y120" name="seat[]" />
+          <label for="seat-Y120" class="seat">120</label>
+          <input id="seat-Y121" class="seat-select" type="checkbox" value="Y121" name="seat[]" />
+          <label for="seat-Y121" class="seat">121</label>
+          <input id="seat-Y122" class="seat-select" type="checkbox" value="Y122" name="seat[]" />
+          <label for="seat-Y122" class="seat">122</label>
+          <input id="seat-Y123" class="seat-select" type="checkbox" value="Y123" name="seat[]" />
+          <label for="seat-Y123" class="seat">123</label>
+          <input id="seat-Y124" class="seat-select" type="checkbox" value="Y124" name="seat[]" />
+          <label for="seat-Y124" class="seat">124</label>
+          <input id="seat-Y125" class="seat-select" type="checkbox" value="Y125" name="seat[]" />
+          <label for="seat-Y125" class="seat">125</label>
+          <input id="seat-Y126" class="seat-select" type="checkbox" value="Y126" name="seat[]" />
+          <label for="seat-Y126" class="seat">126</label>
+          <input id="seat-Y127" class="seat-select" type="checkbox" value="Y127" name="seat[]" />
+          <label for="seat-Y127" class="seat">127</label>
+          <br><br>
+          <!--X Seating-->
+          <input id="seat-X114" class="seat-select" type="checkbox" value="X114" name="seat[]" />
+          <label for="seat-X114" class="seat">114</label>
+          <input id="seat-X115" class="seat-select" type="checkbox" value="X115" name="seat[]" />
+          <label for="seat-X115" class="seat">115</label>
+          <input id="seat-X116" class="seat-select" type="checkbox" value="X116" name="seat[]" />
+          <label for="seat-X116" class="seat">116</label>
+          <input id="seat-X117" class="seat-select" type="checkbox" value="X117" name="seat[]" />
+          <label for="seat-X117" class="seat">117</label>
+          <input id="seat-X118" class="seat-select" type="checkbox" value="X118" name="seat[]" />
+          <label for="seat-X118" class="seat">118</label>
+          <input id="seat-X119" class="seat-select" type="checkbox" value="X119" name="seat[]" />
+          <label for="seat-X119" class="seat">119</label>
+          <input id="seat-X120" class="seat-select" type="checkbox" value="X120" name="seat[]" />
+          <label for="seat-X120" class="seat">120</label>
+          <input id="seat-X121" class="seat-select" type="checkbox" value="X121" name="seat[]" />
+          <label for="seat-X121" class="seat">121</label>
+          <input id="seat-X122" class="seat-select" type="checkbox" value="X122" name="seat[]" />
+          <label for="seat-X122" class="seat">122</label>
+          <input id="seat-X123" class="seat-select" type="checkbox" value="X123" name="seat[]" />
+          <label for="seat-X123" class="seat">123</label>
+          <input id="seat-X124" class="seat-select" type="checkbox" value="X124" name="seat[]" />
+          <label for="seat-X124" class="seat">124</label>
+          <input id="seat-X125" class="seat-select" type="checkbox" value="X125" name="seat[]" />
+          <label for="seat-X125" class="seat">125</label>
+          <input id="seat-X126" class="seat-select" type="checkbox" value="X126" name="seat[]" />
+          <label for="seat-X126" class="seat">126</label>
+          <br><br>
+          <!--W Seating-->
+          <input id="seat-W114" class="seat-select" type="checkbox" value="W114" name="seat[]" />
+          <label for="seat-W114" class="seat">114</label>
+          <input id="seat-W115" class="seat-select" type="checkbox" value="W115" name="seat[]" />
+          <label for="seat-W115" class="seat">115</label>
+          <input id="seat-W116" class="seat-select" type="checkbox" value="W116" name="seat[]" />
+          <label for="seat-W116" class="seat">116</label>
+          <input id="seat-W117" class="seat-select" type="checkbox" value="W117" name="seat[]" />
+          <label for="seat-W117" class="seat">117</label>
+          <input id="seat-W118" class="seat-select" type="checkbox" value="W118" name="seat[]" />
+          <label for="seat-W118" class="seat">118</label>
+          <input id="seat-W119" class="seat-select" type="checkbox" value="W119" name="seat[]" />
+          <label for="seat-W119" class="seat">119</label>
+          <input id="seat-W120" class="seat-select" type="checkbox" value="W120" name="seat[]" />
+          <label for="seat-W120" class="seat">120</label>
+          <input id="seat-W121" class="seat-select" type="checkbox" value="W121" name="seat[]" />
+          <label for="seat-W121" class="seat">121</label>
+          <input id="seat-W122" class="seat-select" type="checkbox" value="W122" name="seat[]" />
+          <label for="seat-W122" class="seat">122</label>
+          <input id="seat-W123" class="seat-select" type="checkbox" value="W123" name="seat[]" />
+          <label for="seat-W123" class="seat">123</label>
+          <input id="seat-W124" class="seat-select" type="checkbox" value="W124" name="seat[]" />
+          <label for="seat-W124" class="seat">124</label>
+          <input id="seat-W125" class="seat-select" type="checkbox" value="W125" name="seat[]" />
+          <label for="seat-W125" class="seat">125</label>
+          <input id="seat-W126" class="seat-select" type="checkbox" value="W126" name="seat[]" />
+          <label for="seat-W126" class="seat">126</label>
+          <input id="seat-W127" class="seat-select" type="checkbox" value="W127" name="seat[]" />
+          <label for="seat-W127" class="seat">127</label>
+          <br><br>
+          <!--V Seating-->
+          <input id="seat-V114" class="seat-select" type="checkbox" value="V114" name="seat[]" />
+          <label for="seat-V114" class="seat">114</label>
+          <input id="seat-V115" class="seat-select" type="checkbox" value="V115" name="seat[]" />
+          <label for="seat-V115" class="seat">115</label>
+          <input id="seat-V116" class="seat-select" type="checkbox" value="V116" name="seat[]" />
+          <label for="seat-V116" class="seat">116</label>
+          <input id="seat-V117" class="seat-select" type="checkbox" value="V117" name="seat[]" />
+          <label for="seat-V117" class="seat">117</label>
+          <input id="seat-V118" class="seat-select" type="checkbox" value="V118" name="seat[]" />
+          <label for="seat-V118" class="seat">118</label>
+          <input id="seat-V119" class="seat-select" type="checkbox" value="V119" name="seat[]" />
+          <label for="seat-V119" class="seat">119</label>
+          <input id="seat-V120" class="seat-select" type="checkbox" value="V120" name="seat[]" />
+          <label for="seat-V120" class="seat">120</label>
+          <input id="seat-V121" class="seat-select" type="checkbox" value="V121" name="seat[]" />
+          <label for="seat-V121" class="seat">121</label>
+          <input id="seat-V122" class="seat-select" type="checkbox" value="V122" name="seat[]" />
+          <label for="seat-V122" class="seat">122</label>
+          <input id="seat-V123" class="seat-select" type="checkbox" value="V123" name="seat[]" />
+          <label for="seat-V123" class="seat">123</label>
+          <input id="seat-V124" class="seat-select" type="checkbox" value="V124" name="seat[]" />
+          <label for="seat-V124" class="seat">124</label>
+          <input id="seat-V125" class="seat-select" type="checkbox" value="V125" name="seat[]" />
+          <label for="seat-V125" class="seat">125</label>
+          <input id="seat-V126" class="seat-select" type="checkbox" value="V126" name="seat[]" />
+          <label for="seat-V126" class="seat">126</label>
+          <br><br>
+          <!--U Seating-->
+          <input id="seat-U114" class="seat-select" type="checkbox" value="U114" name="seat[]" />
+          <label for="seat-U114" class="seat">114</label>
+          <input id="seat-U115" class="seat-select" type="checkbox" value="U115" name="seat[]" />
+          <label for="seat-U115" class="seat">115</label>
+          <input id="seat-U116" class="seat-select" type="checkbox" value="U116" name="seat[]" />
+          <label for="seat-U116" class="seat">116</label>
+          <input id="seat-U117" class="seat-select" type="checkbox" value="U117" name="seat[]" />
+          <label for="seat-U117" class="seat">117</label>
+          <input id="seat-U118" class="seat-select" type="checkbox" value="U118" name="seat[]" />
+          <label for="seat-U118" class="seat">118</label>
+          <input id="seat-U119" class="seat-select" type="checkbox" value="U119" name="seat[]" />
+          <label for="seat-U119" class="seat">119</label>
+          <input id="seat-U120" class="seat-select" type="checkbox" value="U120" name="seat[]" />
+          <label for="seat-U120" class="seat">120</label>
+          <input id="seat-U121" class="seat-select" type="checkbox" value="U121" name="seat[]" />
+          <label for="seat-U121" class="seat">121</label>
+          <input id="seat-U122" class="seat-select" type="checkbox" value="U122" name="seat[]" />
+          <label for="seat-U122" class="seat">122</label>
+          <input id="seat-U123" class="seat-select" type="checkbox" value="U123" name="seat[]" />
+          <label for="seat-U123" class="seat">123</label>
+          <input id="seat-U124" class="seat-select" type="checkbox" value="U124" name="seat[]" />
+          <label for="seat-U124" class="seat">124</label>
+          <input id="seat-U125" class="seat-select" type="checkbox" value="U125" name="seat[]" />
+          <label for="seat-U125" class="seat">125</label>
+          <input id="seat-U126" class="seat-select" type="checkbox" value="U126" name="seat[]" />
+          <label for="seat-U126" class="seat">126</label>
+          <input id="seat-U127" class="seat-select" type="checkbox" value="U127" name="seat[]" />
+          <label for="seat-U127" class="seat">127</label>
+          <br><br>
+          <!--T Seating-->
+          <input id="seat-T114" class="seat-select" type="checkbox" value="T114" name="seat[]" />
+          <label for="seat-T114" class="seat">114</label>
+          <input id="seat-T115" class="seat-select" type="checkbox" value="T115" name="seat[]" />
+          <label for="seat-T115" class="seat">115</label>
+          <input id="seat-T116" class="seat-select" type="checkbox" value="T116" name="seat[]" />
+          <label for="seat-T116" class="seat">116</label>
+          <input id="seat-T117" class="seat-select" type="checkbox" value="T117" name="seat[]" />
+          <label for="seat-T117" class="seat">117</label>
+          <input id="seat-T118" class="seat-select" type="checkbox" value="T118" name="seat[]" />
+          <label for="seat-T118" class="seat">118</label>
+          <input id="seat-T119" class="seat-select" type="checkbox" value="T119" name="seat[]" />
+          <label for="seat-T119" class="seat">119</label>
+          <input id="seat-T120" class="seat-select" type="checkbox" value="T120" name="seat[]" />
+          <label for="seat-T120" class="seat">120</label>
+          <input id="seat-T121" class="seat-select" type="checkbox" value="T121" name="seat[]" />
+          <label for="seat-T121" class="seat">121</label>
+          <input id="seat-T122" class="seat-select" type="checkbox" value="T122" name="seat[]" />
+          <label for="seat-T122" class="seat">122</label>
+          <input id="seat-T123" class="seat-select" type="checkbox" value="T123" name="seat[]" />
+          <label for="seat-T123" class="seat">123</label>
+          <input id="seat-T124" class="seat-select" type="checkbox" value="T124" name="seat[]" />
+          <label for="seat-T124" class="seat">124</label>
+          <input id="seat-T125" class="seat-select" type="checkbox" value="T125" name="seat[]" />
+          <label for="seat-T125" class="seat">125</label>
+          <input id="seat-T126" class="seat-select" type="checkbox" value="T126" name="seat[]" />
+          <label for="seat-T126" class="seat">126</label>
+          <br><br>
+          <!--S Seating-->
+          <input id="seat-S114" class="seat-select" type="checkbox" value="S114" name="seat[]" />
+          <label for="seat-S114" class="seat">114</label>
+          <input id="seat-S115" class="seat-select" type="checkbox" value="S115" name="seat[]" />
+          <label for="seat-S115" class="seat">115</label>
+          <input id="seat-S116" class="seat-select" type="checkbox" value="S116" name="seat[]" />
+          <label for="seat-S116" class="seat">116</label>
+          <input id="seat-S117" class="seat-select" type="checkbox" value="S117" name="seat[]" />
+          <label for="seat-S117" class="seat">117</label>
+          <input id="seat-S118" class="seat-select" type="checkbox" value="S118" name="seat[]" />
+          <label for="seat-S118" class="seat">118</label>
+          <input id="seat-S119" class="seat-select" type="checkbox" value="S119" name="seat[]" />
+          <label for="seat-S119" class="seat">119</label>
+          <input id="seat-S120" class="seat-select" type="checkbox" value="S120" name="seat[]" />
+          <label for="seat-S120" class="seat">120</label>
+          <input id="seat-S121" class="seat-select" type="checkbox" value="S121" name="seat[]" />
+          <label for="seat-S121" class="seat">121</label>
+          <input id="seat-S122" class="seat-select" type="checkbox" value="S122" name="seat[]" />
+          <label for="seat-S122" class="seat">122</label>
+          <input id="seat-S123" class="seat-select" type="checkbox" value="S123" name="seat[]" />
+          <label for="seat-S123" class="seat">123</label>
+          <input id="seat-S124" class="seat-select" type="checkbox" value="S124" name="seat[]" />
+          <label for="seat-S124" class="seat">124</label>
+          <input id="seat-S125" class="seat-select" type="checkbox" value="S125" name="seat[]" />
+          <label for="seat-S125" class="seat">125</label>
+          <input id="seat-S126" class="seat-select" type="checkbox" value="S126" name="seat[]" />
+          <label for="seat-S126" class="seat">126</label>
+          <input id="seat-S127" class="seat-select" type="checkbox" value="S127" name="seat[]" />
+          <label for="seat-S127" class="seat">127</label>
+          <br><br>
+          <!--R Seating-->
+          <input id="seat-R114" class="seat-select" type="checkbox" value="R114" name="seat[]" />
+          <label for="seat-R114" class="seat">114</label>
+          <input id="seat-R115" class="seat-select" type="checkbox" value="R115" name="seat[]" />
+          <label for="seat-R115" class="seat">115</label>
+          <input id="seat-R116" class="seat-select" type="checkbox" value="R116" name="seat[]" />
+          <label for="seat-R116" class="seat">116</label>
+          <input id="seat-R117" class="seat-select" type="checkbox" value="R117" name="seat[]" />
+          <label for="seat-R117" class="seat">117</label>
+          <input id="seat-R118" class="seat-select" type="checkbox" value="R118" name="seat[]" />
+          <label for="seat-R118" class="seat">118</label>
+          <input id="seat-R119" class="seat-select" type="checkbox" value="R119" name="seat[]" />
+          <label for="seat-R119" class="seat">119</label>
+          <input id="seat-R120" class="seat-select" type="checkbox" value="R120" name="seat[]" />
+          <label for="seat-R120" class="seat">120</label>
+          <input id="seat-R121" class="seat-select" type="checkbox" value="R121" name="seat[]" />
+          <label for="seat-R121" class="seat">121</label>
+          <input id="seat-R122" class="seat-select" type="checkbox" value="R122" name="seat[]" />
+          <label for="seat-R122" class="seat">122</label>
+          <input id="seat-R123" class="seat-select" type="checkbox" value="R123" name="seat[]" />
+          <label for="seat-R123" class="seat">123</label>
+          <input id="seat-R124" class="seat-select" type="checkbox" value="R124" name="seat[]" />
+          <label for="seat-R124" class="seat">124</label>
+          <input id="seat-R125" class="seat-select" type="checkbox" value="S125" name="seat[]" />
+          <label for="seat-R125" class="seat">125</label>
+          <input id="seat-R126" class="seat-select" type="checkbox" value="R126" name="seat[]" />
+          <label for="seat-R126" class="seat">126</label>
+          <br><br>
+          <!--Q Seating-->
+          <input id="seat-Q114" class="seat-select" type="checkbox" value="Q114" name="seat[]" />
+          <label for="seat-Q114" class="seat">114</label>
+          <input id="seat-Q115" class="seat-select" type="checkbox" value="Q115" name="seat[]" />
+          <label for="seat-Q115" class="seat">115</label>
+          <input id="seat-Q116" class="seat-select" type="checkbox" value="Q116" name="seat[]" />
+          <label for="seat-Q116" class="seat">116</label>
+          <input id="seat-Q117" class="seat-select" type="checkbox" value="Q117" name="seat[]" />
+          <label for="seat-Q117" class="seat">117</label>
+          <input id="seat-Q118" class="seat-select" type="checkbox" value="Q118" name="seat[]" />
+          <label for="seat-Q118" class="seat">118</label>
+          <input id="seat-Q119" class="seat-select" type="checkbox" value="Q119" name="seat[]" />
+          <label for="seat-Q119" class="seat">119</label>
+          <input id="seat-Q120" class="seat-select" type="checkbox" value="Q120" name="seat[]" />
+          <label for="seat-Q120" class="seat">120</label>
+          <input id="seat-Q121" class="seat-select" type="checkbox" value="Q121" name="seat[]" />
+          <label for="seat-Q121" class="seat">121</label>
+          <input id="seat-Q122" class="seat-select" type="checkbox" value="Q122" name="seat[]" />
+          <label for="seat-Q122" class="seat">122</label>
+          <input id="seat-Q123" class="seat-select" type="checkbox" value="Q123" name="seat[]" />
+          <label for="seat-Q123" class="seat">123</label>
+          <input id="seat-Q124" class="seat-select" type="checkbox" value="Q124" name="seat[]" />
+          <label for="seat-Q124" class="seat">124</label>
+          <input id="seat-Q125" class="seat-select" type="checkbox" value="Q125" name="seat[]" />
+          <label for="seat-Q125" class="seat">125</label>
+          <input id="seat-Q126" class="seat-select" type="checkbox" value="Q126" name="seat[]" />
+          <label for="seat-Q126" class="seat">126</label>
+          <input id="seat-Q127" class="seat-select" type="checkbox" value="Q127" name="seat[]" />
+          <label for="seat-Q127" class="seat">127</label>
+          <br><br>
+          <!--P Seating-->
+          <input id="seat-P114" class="seat-select" type="checkbox" value="P114" name="seat[]" />
+          <label for="seat-P114" class="seat">114</label>
+          <input id="seat-P115" class="seat-select" type="checkbox" value="P115" name="seat[]" />
+          <label for="seat-P115" class="seat">115</label>
+          <input id="seat-P116" class="seat-select" type="checkbox" value="P116" name="seat[]" />
+          <label for="seat-P116" class="seat">116</label>
+          <input id="seat-P117" class="seat-select" type="checkbox" value="P117" name="seat[]" />
+          <label for="seat-P117" class="seat">117</label>
+          <input id="seat-P118" class="seat-select" type="checkbox" value="P118" name="seat[]" />
+          <label for="seat-P118" class="seat">118</label>
+          <input id="seat-P119" class="seat-select" type="checkbox" value="P119" name="seat[]" />
+          <label for="seat-P119" class="seat">119</label>
+          <input id="seat-P120" class="seat-select" type="checkbox" value="P120" name="seat[]" />
+          <label for="seat-P120" class="seat">120</label>
+          <input id="seat-P121" class="seat-select" type="checkbox" value="P121" name="seat[]" />
+          <label for="seat-P121" class="seat">121</label>
+          <input id="seat-P122" class="seat-select" type="checkbox" value="P122" name="seat[]" />
+          <label for="seat-P122" class="seat">122</label>
+          <input id="seat-P123" class="seat-select" type="checkbox" value="P123" name="seat[]" />
+          <label for="seat-P123" class="seat">123</label>
+          <input id="seat-P124" class="seat-select" type="checkbox" value="P124" name="seat[]" />
+          <label for="seat-P124" class="seat">124</label>
+          <input id="seat-P125" class="seat-select" type="checkbox" value="P125" name="seat[]" />
+          <label for="seat-P125" class="seat">125</label>
+          <input id="seat-P126" class="seat-select" type="checkbox" value="P126" name="seat[]" />
+          <label for="seat-P126" class="seat">126</label>
+          <br><br>
+          <!--N Seating-->
+          <input id="seat-N114" class="seat-select" type="checkbox" value="N114" name="seat[]" />
+          <label for="seat-N114" class="seat">114</label>
+          <input id="seat-N115" class="seat-select" type="checkbox" value="N115" name="seat[]" />
+          <label for="seat-N115" class="seat">115</label>
+          <input id="seat-N116" class="seat-select" type="checkbox" value="N116" name="seat[]" />
+          <label for="seat-N116" class="seat">116</label>
+          <input id="seat-N117" class="seat-select" type="checkbox" value="N117" name="seat[]" />
+          <label for="seat-N117" class="seat">117</label>
+          <input id="seat-N118" class="seat-select" type="checkbox" value="N118" name="seat[]" />
+          <label for="seat-N118" class="seat">118</label>
+          <input id="seat-N119" class="seat-select" type="checkbox" value="N119" name="seat[]" />
+          <label for="seat-N119" class="seat">119</label>
+          <input id="seat-N120" class="seat-select" type="checkbox" value="N120" name="seat[]" />
+          <label for="seat-N120" class="seat">120</label>
+          <input id="seat-N121" class="seat-select" type="checkbox" value="N121" name="seat[]" />
+          <label for="seat-N121" class="seat">121</label>
+          <input id="seat-N122" class="seat-select" type="checkbox" value="N122" name="seat[]" />
+          <label for="seat-N122" class="seat">122</label>
+          <input id="seat-N123" class="seat-select" type="checkbox" value="N123" name="seat[]" />
+          <label for="seat-N123" class="seat">123</label>
+          <input id="seat-N124" class="seat-select" type="checkbox" value="N124" name="seat[]" />
+          <label for="seat-N124" class="seat">124</label>
+          <input id="seat-N125" class="seat-select" type="checkbox" value="N125" name="seat[]" />
+          <label for="seat-N125" class="seat">125</label>
+          <input id="seat-N126" class="seat-select" type="checkbox" value="N126" name="seat[]" />
+          <label for="seat-N126" class="seat">126</label>
+          <input id="seat-N127" class="seat-select" type="checkbox" value="N127" name="seat[]" />
+          <label for="seat-N127" class="seat">127</label>
+          <br><br>
+          <!--M Seating-->
+          <input id="seat-M114" class="seat-select" type="checkbox" value="M114" name="seat[]" />
+          <label for="seat-M114" class="seat">114</label>
+          <input id="seat-M115" class="seat-select" type="checkbox" value="M115" name="seat[]" />
+          <label for="seat-M115" class="seat">115</label>
+          <input id="seat-M116" class="seat-select" type="checkbox" value="M116" name="seat[]" />
+          <label for="seat-M116" class="seat">116</label>
+          <input id="seat-M117" class="seat-select" type="checkbox" value="M117" name="seat[]" />
+          <label for="seat-M117" class="seat">117</label>
+          <input id="seat-M118" class="seat-select" type="checkbox" value="M118" name="seat[]" />
+          <label for="seat-M118" class="seat">118</label>
+          <input id="seat-M119" class="seat-select" type="checkbox" value="M119" name="seat[]" />
+          <label for="seat-M119" class="seat">119</label>
+          <input id="seat-M120" class="seat-select" type="checkbox" value="M120" name="seat[]" />
+          <label for="seat-M120" class="seat">120</label>
+          <input id="seat-M121" class="seat-select" type="checkbox" value="M121" name="seat[]" />
+          <label for="seat-M121" class="seat">121</label>
+          <input id="seat-M122" class="seat-select" type="checkbox" value="M122" name="seat[]" />
+          <label for="seat-M122" class="seat">122</label>
+          <input id="seat-M123" class="seat-select" type="checkbox" value="M123" name="seat[]" />
+          <label for="seat-M123" class="seat">123</label>
+          <input id="seat-M124" class="seat-select" type="checkbox" value="M124" name="seat[]" />
+          <label for="seat-M124" class="seat">124</label>
+          <input id="seat-M125" class="seat-select" type="checkbox" value="M125" name="seat[]" />
+          <label for="seat-M125" class="seat">125</label>
+          <input id="seat-M126" class="seat-select" type="checkbox" value="M126" name="seat[]" />
+          <label for="seat-M126" class="seat">126</label>
+          <br><br>
+          <!--L Seating-->
+          <input id="seat-L114" class="seat-select" type="checkbox" value="L114" name="seat[]" />
+          <label for="seat-L114" class="seat">114</label>
+          <input id="seat-L115" class="seat-select" type="checkbox" value="L115" name="seat[]" />
+          <label for="seat-L115" class="seat">115</label>
+          <input id="seat-L116" class="seat-select" type="checkbox" value="L116" name="seat[]" />
+          <label for="seat-L116" class="seat">116</label>
+          <input id="seat-L117" class="seat-select" type="checkbox" value="L117" name="seat[]" />
+          <label for="seat-L117" class="seat">117</label>
+          <input id="seat-L118" class="seat-select" type="checkbox" value="L118" name="seat[]" />
+          <label for="seat-L118" class="seat">118</label>
+          <input id="seat-L119" class="seat-select" type="checkbox" value="L119" name="seat[]" />
+          <label for="seat-L119" class="seat">119</label>
+          <input id="seat-L120" class="seat-select" type="checkbox" value="L120" name="seat[]" />
+          <label for="seat-L120" class="seat">120</label>
+          <input id="seat-L121" class="seat-select" type="checkbox" value="L121" name="seat[]" />
+          <label for="seat-L121" class="seat">121</label>
+          <input id="seat-L122" class="seat-select" type="checkbox" value="L122" name="seat[]" />
+          <label for="seat-L122" class="seat">122</label>
+          <input id="seat-L123" class="seat-select" type="checkbox" value="L123" name="seat[]" />
+          <label for="seat-L123" class="seat">123</label>
+          <input id="seat-L124" class="seat-select" type="checkbox" value="L124" name="seat[]" />
+          <label for="seat-L124" class="seat">124</label>
+          <input id="seat-L125" class="seat-select" type="checkbox" value="L125" name="seat[]" />
+          <label for="seat-L125" class="seat">125</label>
+          <input id="seat-L126" class="seat-select" type="checkbox" value="L126" name="seat[]" />
+          <label for="seat-L126" class="seat">126</label>
+          <input id="seat-L127" class="seat-select" type="checkbox" value="L127" name="seat[]" />
+          <label for="seat-L127" class="seat">127</label>
+          <br><br>
+          <!--K Seating-->
+          <input id="seat-K114" class="seat-select" type="checkbox" value="K114" name="seat[]" />
+          <label for="seat-K114" class="seat">114</label>
+          <input id="seat-K115" class="seat-select" type="checkbox" value="K115" name="seat[]" />
+          <label for="seat-K115" class="seat">115</label>
+          <input id="seat-K116" class="seat-select" type="checkbox" value="K116" name="seat[]" />
+          <label for="seat-K116" class="seat">116</label>
+          <input id="seat-K117" class="seat-select" type="checkbox" value="K117" name="seat[]" />
+          <label for="seat-K117" class="seat">117</label>
+          <input id="seat-K118" class="seat-select" type="checkbox" value="K118" name="seat[]" />
+          <label for="seat-K118" class="seat">118</label>
+          <input id="seat-K119" class="seat-select" type="checkbox" value="K119" name="seat[]" />
+          <label for="seat-K119" class="seat">119</label>
+          <input id="seat-K120" class="seat-select" type="checkbox" value="K120" name="seat[]" />
+          <label for="seat-K120" class="seat">120</label>
+          <input id="seat-K121" class="seat-select" type="checkbox" value="K121" name="seat[]" />
+          <label for="seat-K121" class="seat">121</label>
+          <input id="seat-K122" class="seat-select" type="checkbox" value="K122" name="seat[]" />
+          <label for="seat-K122" class="seat">122</label>
+          <input id="seat-K123" class="seat-select" type="checkbox" value="K123" name="seat[]" />
+          <label for="seat-K123" class="seat">123</label>
+          <input id="seat-K124" class="seat-select" type="checkbox" value="K124" name="seat[]" />
+          <label for="seat-K124" class="seat">124</label>
+          <input id="seat-K125" class="seat-select" type="checkbox" value="K125" name="seat[]" />
+          <label for="seat-K125" class="seat">125</label>
+          <input id="seat-K126" class="seat-select" type="checkbox" value="K126" name="seat[]" />
+          <label for="seat-K126" class="seat">126</label>
+          <br><br>
+          <!--J Seating-->
+          <input id="seat-J114" class="seat-select" type="checkbox" value="J114" name="seat[]" />
+          <label for="seat-J114" class="seat">114</label>
+          <input id="seat-J115" class="seat-select" type="checkbox" value="J115" name="seat[]" />
+          <label for="seat-J115" class="seat">115</label>
+          <input id="seat-J116" class="seat-select" type="checkbox" value="J116" name="seat[]" />
+          <label for="seat-J116" class="seat">116</label>
+          <input id="seat-J117" class="seat-select" type="checkbox" value="J117" name="seat[]" />
+          <label for="seat-J117" class="seat">117</label>
+          <input id="seat-J118" class="seat-select" type="checkbox" value="J118" name="seat[]" />
+          <label for="seat-J118" class="seat">118</label>
+          <input id="seat-J119" class="seat-select" type="checkbox" value="J119" name="seat[]" />
+          <label for="seat-J119" class="seat">119</label>
+          <input id="seat-J120" class="seat-select" type="checkbox" value="J120" name="seat[]" />
+          <label for="seat-J120" class="seat">120</label>
+          <input id="seat-J121" class="seat-select" type="checkbox" value="J121" name="seat[]" />
+          <label for="seat-J121" class="seat">121</label>
+          <input id="seat-J122" class="seat-select" type="checkbox" value="J122" name="seat[]" />
+          <label for="seat-J122" class="seat">122</label>
+          <input id="seat-J123" class="seat-select" type="checkbox" value="J123" name="seat[]" />
+          <label for="seat-J123" class="seat">123</label>
+          <input id="seat-J124" class="seat-select" type="checkbox" value="J124" name="seat[]" />
+          <label for="seat-J124" class="seat">124</label>
+          <input id="seat-J125" class="seat-select" type="checkbox" value="J125" name="seat[]" />
+          <label for="seat-J125" class="seat">125</label>
+          <input id="seat-J126" class="seat-select" type="checkbox" value="J126" name="seat[]" />
+          <label for="seat-J126" class="seat">126</label>
+          <input id="seat-J127" class="seat-select" type="checkbox" value="J127" name="seat[]" />
+          <label for="seat-J127" class="seat">127</label>
+          <br><br>
+          <!--H Seating-->
+          <input id="seat-H114" class="seat-select" type="checkbox" value="H114" name="seat[]" />
+          <label for="seat-H114" class="seat">114</label>
+          <input id="seat-H115" class="seat-select" type="checkbox" value="H115" name="seat[]" />
+          <label for="seat-H115" class="seat">115</label>
+          <input id="seat-H116" class="seat-select" type="checkbox" value="H116" name="seat[]" />
+          <label for="seat-H116" class="seat">116</label>
+          <input id="seat-H117" class="seat-select" type="checkbox" value="H117" name="seat[]" />
+          <label for="seat-H117" class="seat">117</label>
+          <input id="seat-H118" class="seat-select" type="checkbox" value="H118" name="seat[]" />
+          <label for="seat-H118" class="seat">118</label>
+          <input id="seat-H119" class="seat-select" type="checkbox" value="H119" name="seat[]" />
+          <label for="seat-H119" class="seat">119</label>
+          <input id="seat-H120" class="seat-select" type="checkbox" value="H120" name="seat[]" />
+          <label for="seat-H120" class="seat">120</label>
+          <input id="seat-H121" class="seat-select" type="checkbox" value="H121" name="seat[]" />
+          <label for="seat-H121" class="seat">121</label>
+          <input id="seat-H122" class="seat-select" type="checkbox" value="H122" name="seat[]" />
+          <label for="seat-H122" class="seat">122</label>
+          <input id="seat-H123" class="seat-select" type="checkbox" value="H123" name="seat[]" />
+          <label for="seat-H123" class="seat">123</label>
+          <input id="seat-H124" class="seat-select" type="checkbox" value="H124" name="seat[]" />
+          <label for="seat-H124" class="seat">124</label>
+          <input id="seat-H125" class="seat-select" type="checkbox" value="H125" name="seat[]" />
+          <label for="seat-H125" class="seat">125</label>
+          <input id="seat-H126" class="seat-select" type="checkbox" value="H126" name="seat[]" />
+          <label for="seat-H126" class="seat">126</label>
+          <input id="seat-H127" class="seat-select" type="checkbox" value="H127" name="seat[]" />
+          <label for="seat-H127" class="seat">127</label>
+          <br><br>
+          <!--G Seating-->
+          <input id="seat-G114" class="seat-select" type="checkbox" value="G114" name="seat[]" />
+          <label for="seat-G114" class="seat">114</label>
+          <input id="seat-G115" class="seat-select" type="checkbox" value="G115" name="seat[]" />
+          <label for="seat-G115" class="seat">115</label>
+          <input id="seat-G116" class="seat-select" type="checkbox" value="G116" name="seat[]" />
+          <label for="seat-G116" class="seat">116</label>
+          <input id="seat-G117" class="seat-select" type="checkbox" value="G117" name="seat[]" />
+          <label for="seat-G117" class="seat">117</label>
+          <input id="seat-G118" class="seat-select" type="checkbox" value="G118" name="seat[]" />
+          <label for="seat-G118" class="seat">118</label>
+          <input id="seat-G119" class="seat-select" type="checkbox" value="G119" name="seat[]" />
+          <label for="seat-G119" class="seat">119</label>
+          <input id="seat-G120" class="seat-select" type="checkbox" value="G120" name="seat[]" />
+          <label for="seat-G120" class="seat">120</label>
+          <input id="seat-G121" class="seat-select" type="checkbox" value="G121" name="seat[]" />
+          <label for="seat-G121" class="seat">121</label>
+          <input id="seat-G122" class="seat-select" type="checkbox" value="G122" name="seat[]" />
+          <label for="seat-G122" class="seat">122</label>
+          <input id="seat-G123" class="seat-select" type="checkbox" value="G123" name="seat[]" />
+          <label for="seat-G123" class="seat">123</label>
+          <input id="seat-G124" class="seat-select" type="checkbox" value="G124" name="seat[]" />
+          <label for="seat-G124" class="seat">124</label>
+          <input id="seat-G125" class="seat-select" type="checkbox" value="G125" name="seat[]" />
+          <label for="seat-G125" class="seat">125</label>
+          <input id="seat-G126" class="seat-select" type="checkbox" value="G126" name="seat[]" />
+          <label for="seat-G126" class="seat">126</label>
+          <br><br>
+          <!--F Seating-->
+          <input id="seat-F114" class="seat-select" type="checkbox" value="F114" name="seat[]" />
+          <label for="seat-F114" class="seat">F114</label>
+          <input id="seat-F115" class="seat-select" type="checkbox" value="F115" name="seat[]" />
+          <label for="seat-F115" class="seat">F115</label>
+          <input id="seat-F116" class="seat-select" type="checkbox" value="F116" name="seat[]" />
+          <label for="seat-F116" class="seat">F116</label>
+          <input id="seat-F117" class="seat-select" type="checkbox" value="F117" name="seat[]" />
+          <label for="seat-F117" class="seat">F117</label>
+          <input id="seat-F118" class="seat-select" type="checkbox" value="F118" name="seat[]" />
+          <label for="seat-F118" class="seat">F118</label>
+          <input id="seat-F119" class="seat-select" type="checkbox" value="F119" name="seat[]" />
+          <label for="seat-F119" class="seat">F119</label>
+          <input id="seat-F120" class="seat-select" type="checkbox" value="F120" name="seat[]" />
+          <label for="seat-F120" class="seat">F120</label>
+          <input id="seat-F121" class="seat-select" type="checkbox" value="F121" name="seat[]" />
+          <label for="seat-F121" class="seat">F121</label>
+          <input id="seat-F122" class="seat-select" type="checkbox" value="F122" name="seat[]" />
+          <label for="seat-F122" class="seat">F122</label>
+          <input id="seat-F123" class="seat-select" type="checkbox" value="F123" name="seat[]" />
+          <label for="seat-F123" class="seat">F123</label>
+          <input id="seat-F124" class="seat-select" type="checkbox" value="F124" name="seat[]" />
+          <label for="seat-F124" class="seat">F124</label>
+          <input id="seat-F125" class="seat-select" type="checkbox" value="F125" name="seat[]" />
+          <label for="seat-F125" class="seat">F125</label>
+          <input id="seat-F126" class="seat-select" type="checkbox" value="F126" name="seat[]" />
+          <label for="seat-F126" class="seat">F126</label>
+          <input id="seat-F127" class="seat-select" type="checkbox" value="F127" name="seat[]" />
+          <label for="seat-F127" class="seat">F127</label>
+          <br><br>
+          <!--E Seating-->
+          <input id="seat-E114" class="seat-select" type="checkbox" value="E114" name="seat[]" />
+          <label for="seat-E114" class="seat">E114</label>
+          <input id="seat-E115" class="seat-select" type="checkbox" value="E115" name="seat[]" />
+          <label for="seat-E115" class="seat">E115</label>
+          <input id="seat-E116" class="seat-select" type="checkbox" value="E116" name="seat[]" />
+          <label for="seat-E116" class="seat">E116</label>
+          <input id="seat-E117" class="seat-select" type="checkbox" value="E117" name="seat[]" />
+          <label for="seat-E117" class="seat">E117</label>
+          <input id="seat-E118" class="seat-select" type="checkbox" value="E118" name="seat[]" />
+          <label for="seat-E118" class="seat">E118</label>
+          <input id="seat-E119" class="seat-select" type="checkbox" value="E119" name="seat[]" />
+          <label for="seat-E119" class="seat">E119</label>
+          <input id="seat-E120" class="seat-select" type="checkbox" value="E120" name="seat[]" />
+          <label for="seat-E120" class="seat">E120</label>
+          <input id="seat-E121" class="seat-select" type="checkbox" value="E121" name="seat[]" />
+          <label for="seat-E121" class="seat">E121</label>
+          <input id="seat-E122" class="seat-select" type="checkbox" value="E122" name="seat[]" />
+          <label for="seat-E122" class="seat">E122</label>
+          <input id="seat-E123" class="seat-select" type="checkbox" value="E123" name="seat[]" />
+          <label for="seat-E123" class="seat">E123</label>
+          <input id="seat-E124" class="seat-select" type="checkbox" value="E124" name="seat[]" />
+          <label for="seat-E124" class="seat">E124</label>
+          <input id="seat-E125" class="seat-select" type="checkbox" value="E125" name="seat[]" />
+          <label for="seat-E125" class="seat">E125</label>
+          <input id="seat-E126" class="seat-select" type="checkbox" value="E126" name="seat[]" />
+          <label for="seat-E126" class="seat">E126</label>
+          <br><br>
+          <!--D Seating-->
+          <input id="seat-D114" class="seat-select" type="checkbox" value="D114" name="seat[]" />
+          <label for="seat-D114" class="seat">114</label>
+          <input id="seat-D115" class="seat-select" type="checkbox" value="D115" name="seat[]" />
+          <label for="seat-D115" class="seat">115</label>
+          <input id="seat-D116" class="seat-select" type="checkbox" value="D116" name="seat[]" />
+          <label for="seat-D116" class="seat">116</label>
+          <input id="seat-D117" class="seat-select" type="checkbox" value="D117" name="seat[]" />
+          <label for="seat-D117" class="seat">117</label>
+          <input id="seat-D118" class="seat-select" type="checkbox" value="D118" name="seat[]" />
+          <label for="seat-D118" class="seat">118</label>
+          <input id="seat-D119" class="seat-select" type="checkbox" value="D119" name="seat[]" />
+          <label for="seat-D119" class="seat">119</label>
+          <input id="seat-D120" class="seat-select" type="checkbox" value="D120" name="seat[]" />
+          <label for="seat-D120" class="seat">120</label>
+          <input id="seat-D121" class="seat-select" type="checkbox" value="D121" name="seat[]" />
+          <label for="seat-D121" class="seat">121</label>
+          <input id="seat-D122" class="seat-select" type="checkbox" value="D122" name="seat[]" />
+          <label for="seat-D122" class="seat">122</label>
+          <input id="seat-D123" class="seat-select" type="checkbox" value="D123" name="seat[]" />
+          <label for="seat-D123" class="seat">123</label>
+          <input id="seat-D124" class="seat-select" type="checkbox" value="D124" name="seat[]" />
+          <label for="seat-D124" class="seat">124</label>
+          <input id="seat-D125" class="seat-select" type="checkbox" value="D125" name="seat[]" />
+          <label for="seat-D125" class="seat">125</label>
+          <input id="seat-D126" class="seat-select" type="checkbox" value="D126" name="seat[]" />
+          <label for="seat-D126" class="seat">126</label>
+          <input id="seat-D127" class="seat-select" type="checkbox" value="D127" name="seat[]" />
+          <label for="seat-D127" class="seat">127</label>
+          <br><br>
+          <!--C Seating-->
+          <input id="seat-C114" class="seat-select" type="checkbox" value="C114" name="seat[]" />
+          <label for="seat-C114" class="seat">114</label>
+          <input id="seat-C115" class="seat-select" type="checkbox" value="C115" name="seat[]" />
+          <label for="seat-C115" class="seat">115</label>
+          <input id="seat-C116" class="seat-select" type="checkbox" value="C116" name="seat[]" />
+          <label for="seat-C116" class="seat">116</label>
+          <input id="seat-C117" class="seat-select" type="checkbox" value="C117" name="seat[]" />
+          <label for="seat-C117" class="seat">117</label>
+          <input id="seat-C118" class="seat-select" type="checkbox" value="C118" name="seat[]" />
+          <label for="seat-C118" class="seat">118</label>
+          <input id="seat-C119" class="seat-select" type="checkbox" value="C119" name="seat[]" />
+          <label for="seat-C119" class="seat">119</label>
+          <input id="seat-C120" class="seat-select" type="checkbox" value="C120" name="seat[]" />
+          <label for="seat-C120" class="seat">120</label>
+          <input id="seat-C121" class="seat-select" type="checkbox" value="C121" name="seat[]" />
+          <label for="seat-C121" class="seat">121</label>
+          <input id="seat-C122" class="seat-select" type="checkbox" value="C122" name="seat[]" />
+          <label for="seat-C122" class="seat">122</label>
+          <input id="seat-C123" class="seat-select" type="checkbox" value="C123" name="seat[]" />
+          <label for="seat-C123" class="seat">123</label>
+          <input id="seat-C124" class="seat-select" type="checkbox" value="C124" name="seat[]" />
+          <label for="seat-C124" class="seat">124</label>
+          <input id="seat-C125" class="seat-select" type="checkbox" value="C125" name="seat[]" />
+          <label for="seat-C125" class="seat">125</label>
+          <input id="seat-C126" class="seat-select" type="checkbox" value="C126" name="seat[]" />
+          <label for="seat-C126" class="seat">126</label>
+          <input id="seat-C127" class="seat-select" type="checkbox" value="C127" name="seat[]" />
+          <label for="seat-C127" class="seat">127</label>
+          <br><br>
+          <!--B Seating-->
+          <input id="seat-B114" class="seat-select" type="checkbox" value="B114" name="seat[]" />
+          <label for="seat-B114" class="seat">114</label>
+          <input id="seat-B115" class="seat-select" type="checkbox" value="B115" name="seat[]" />
+          <label for="seat-B115" class="seat">115</label>
+          <input id="seat-B116" class="seat-select" type="checkbox" value="B116" name="seat[]" />
+          <label for="seat-B116" class="seat">116</label>
+          <input id="seat-B117" class="seat-select" type="checkbox" value="B117" name="seat[]" />
+          <label for="seat-B117" class="seat">117</label>
+          <input id="seat-B118" class="seat-select" type="checkbox" value="B118" name="seat[]" />
+          <label for="seat-B118" class="seat">118</label>
+          <input id="seat-B119" class="seat-select" type="checkbox" value="B119" name="seat[]" />
+          <label for="seat-B119" class="seat">119</label>
+          <input id="seat-B120" class="seat-select" type="checkbox" value="B120" name="seat[]" />
+          <label for="seat-B120" class="seat">120</label>
+          <input id="seat-B121" class="seat-select" type="checkbox" value="B121" name="seat[]" />
+          <label for="seat-B121" class="seat">121</label>
+          <input id="seat-B122" class="seat-select" type="checkbox" value="B122" name="seat[]" />
+          <label for="seat-B122" class="seat">122</label>
+          <input id="seat-B123" class="seat-select" type="checkbox" value="B123" name="seat[]" />
+          <label for="seat-B123" class="seat">123</label>
+          <input id="seat-B124" class="seat-select" type="checkbox" value="B124" name="seat[]" />
+          <label for="seat-B124" class="seat">124</label>
+          <input id="seat-B125" class="seat-select" type="checkbox" value="B125" name="seat[]" />
+          <label for="seat-B125" class="seat">125</label>
+          <input id="seat-B126" class="seat-select" type="checkbox" value="B126" name="seat[]" />
+          <label for="seat-B126" class="seat">126</label>
+          <br><br>
+          <!--A Seating-->
+          <input id="seat-A114" class="seat-select" type="checkbox" value="A114" name="seat[]" />
+         <label for="seat-A114" class="seat">A114</label>
+         <input id="seat-A115" class="seat-select" type="checkbox" value="A115" name="seat[]" />
+         <label for="seat-A115" class="seat">A115</label>
+         <input id="seat-A116" class="seat-select" type="checkbox" value="A116" name="seat[]" />
+         <label for="seat-A116" class="seat">A116</label>
+         <input id="seat-A117" class="seat-select" type="checkbox" value="A117" name="seat[]" />
+         <label for="seat-A117" class="seat">A117</label>
+         <input id="seat-A118" class="seat-select" type="checkbox" value="A118" name="seat[]" />
+         <label for="seat-A118" class="seat">A118</label>
+         <input id="seat-A119" class="seat-select" type="checkbox" value="A119" name="seat[]" />
+         <label for="seat-A119" class="seat">A119</label>
+         <input id="seat-A120" class="seat-select" type="checkbox" value="A120" name="seat[]" />
+         <label for="seat-A120" class="seat">A120</label>
+         <input id="seat-A121" class="seat-select" type="checkbox" value="A121" name="seat[]" />
+         <label for="seat-A121" class="seat">A121</label>
+         <input id="seat-A122" class="seat-select" type="checkbox" value="A122" name="seat[]" />
+         <label for="seat-A122" class="seat">A122</label>
+         <input id="seat-A123" class="seat-select" type="checkbox" value="A123" name="seat[]" />
+         <label for="seat-A123" class="seat">A123</label>
+         <input id="seat-A124" class="seat-select" type="checkbox" value="A124" name="seat[]" />
+         <label for="seat-A124" class="seat">A124</label>
+         <input id="seat-A125" class="seat-select" type="checkbox" value="A125" name="seat[]" />
+         <label for="seat-A125" class="seat">A125</label>
+         <input id="seat-A126" class="seat-select" type="checkbox" value="A126" name="seat[]" />
+         <label for="seat-A126" class="seat">A126</label>
+          </section>
+        </div>
+
+<!---------------------------------------------Aisle Child------------------------------------------->
+   <div class="child_aisle">
+    <label class="seat-unselect">DD</label><br><br>
+    <label class="seat-unselect">CC</label><br><br>
+    <label class="seat-unselect">BB</label><br><br>
+    <label class="seat-unselect">A</label><br><br>
+    <label class="seat-unselect">Z</label><br><br>
+
+   </div>
+<!---------------------------------------------Right Child------------------------------------------->
+        <div class="child_right">
+          <section id="seats">
+            <!--DD Seating-->
+            <input id="seat-DD125" class="seat-unselect" type="button" value="DD125" name="seat[]" />
+            <input id="seat-DD126" class="seat-unselect" type="button" value="DD126" name="seat[]" />
+            <input id="seat-DD127" class="seat-unselect" type="button" value="DD127" name="seat[]" />
+            <input id="seat-DD128" class="seat-unselect" type="button" value="DD128" name="seat[]" />
+            <input id="seat-DD129" class="seat-unselect" type="button" value="DD129" name="seat[]" />
+            <input id="seat-DD130" class="seat-unselect" type="button" value="DD130" name="seat[]" />
+            <input id="seat-DD131" class="seat-unselect" type="button" value="DD131" name="seat[]" />
+            <input id="seat-DD132" class="seat-unselect" type="button" value="DD132" name="seat[]" />
+            <input id="seat-DD133" class="seat-unselect" type="button" value="DD133" name="seat[]" />
+            <input id="seat-DD134" class="seat-unselect" type="button" value="DD134" name="seat[]" />
+            <input id="seat-DD135" class="seat-unselect" type="button" value="DD135" name="seat[]" />
+          <br><br>
+          <!--CC Seating-->
+          <input id="seat-CC125" class="seat-unselect" type="button" value="CC125" name="seat[]" />
+          <input id="seat-CC125" class="seat-unselect" type="button" value="CC125" name="seat[]" />
+          <input id="seat-CC125" class="seat-unselect" type="button" value="CC125" name="seat[]" />
+          <input id="seat-CC125" class="seat-unselect" type="button" value="CC125" name="seat[]" />
+          <input id="seat-CC125" class="seat-unselect" type="button" value="CC125" name="seat[]" />
+          <input id="seat-CC126" class="seat-unselect" type="button" value="CC126" name="seat[]" />
+          <input id="seat-CC127" class="seat-unselect" type="button" value="CC127" name="seat[]" />
+          <input id="seat-CC128" class="seat-select" type="checkbox" value="CC128" name="seat[]" />
+          <label for="seat-CC128" class="seat">128</label>
+          <input id="seat-CC129" class="seat-select" type="checkbox" value="CC129" name="seat[]" />
+          <label for="seat-CC129" class="seat">129</label>
+          <input id="seat-CC130" class="seat-select" type="checkbox" value="CC130" name="seat[]" />
+          <label for="seat-CC130" class="seat">130</label>
+          <input id="seat-CC131" class="seat-select" type="checkbox" value="CC131" name="seat[]" />
+          <label for="seat-CC131" class="seat">131</label>
+          <br><br>
+          <!--BB Seating-->
+          <input id="seat-BB128" class="seat-select" type="checkbox" value="BB128" name="seat[]" />
+          <label for="seat-BB128" class="seat">128</label>
+          <input id="seat-BB129" class="seat-select" type="checkbox" value="BB129" name="seat[]" />
+          <label for="seat-BB129" class="seat">129</label>
+          <input id="seat-BB130" class="seat-select" type="checkbox" value="BB130" name="seat[]" />
+          <label for="seat-BB130" class="seat">130</label>
+          <input id="seat-BB131" class="seat-select" type="checkbox" value="BB131" name="seat[]" />
+          <label for="seat-BB131" class="seat">131</label>
+          <input id="seat-BB132" class="seat-select" type="checkbox" value="BB132" name="seat[]" />
+          <label for="seat-BB132" class="seat">132</label>
+          <input id="seat-BB133" class="seat-select" type="checkbox" value="BB133" name="seat[]" />
+          <label for="seat-BB133" class="seat">133</label>
+          <input id="seat-BB134" class="seat-select" type="checkbox" value="BB134" name="seat[]" />
+          <label for="seat-BB134" class="seat">134</label>
+          <input id="seat-BB135" class="seat-select" type="checkbox" value="BB135" name="seat[]" />
+          <label for="seat-BB135" class="seat">135</label>
+          <input id="seat-BB136" class="seat-select" type="checkbox" value="BB136" name="seat[]" />
+          <label for="seat-BB136" class="seat">136</label>
+          <input id="seat-BB137" class="seat-select" type="checkbox" value="BB137" name="seat[]" />
+          <label for="seat-BB137" class="seat">137</label>
+          <input id="seat-BB138" class="seat-select" type="checkbox" value="BB138" name="seat[]" />
+          <label for="seat-BB138" class="seat">138</label>
+          <br><br>
+          <!--AA Seating-->
+          <input id="seat-AA128" class="seat-select" type="checkbox" value="AA128" name="seat[]" />
+          <label for="seat-AA128" class="seat">128</label>
+          <input id="seat-AA129" class="seat-select" type="checkbox" value="AA129" name="seat[]" />
+          <label for="seat-AA129" class="seat">129</label>
+          <input id="seat-AA130" class="seat-select" type="checkbox" value="AA130" name="seat[]" />
+          <label for="seat-AA130" class="seat">130</label>
+          <input id="seat-AA131" class="seat-select" type="checkbox" value="AA131" name="seat[]" />
+          <label for="seat-AA131" class="seat">131</label>
+          <input id="seat-AA132" class="seat-select" type="checkbox" value="AA132" name="seat[]" />
+          <label for="seat-AA132" class="seat">132</label>
+          <input id="seat-AA133" class="seat-select" type="checkbox" value="AA133" name="seat[]" />
+          <label for="seat-AA133" class="seat">133</label>
+          <input id="seat-AA134" class="seat-select" type="checkbox" value="AA134" name="seat[]" />
+          <label for="seat-AA134" class="seat">134</label>
+          <input id="seat-AA135" class="seat-select" type="checkbox" value="AA135" name="seat[]" />
+          <label for="seat-AA135" class="seat">135</label>
+          <input id="seat-AA136" class="seat-select" type="checkbox" value="AA136" name="seat[]" />
+          <label for="seat-AA136" class="seat">136</label>
+          <input id="seat-AA137" class="seat-select" type="checkbox" value="AA137" name="seat[]" />
+          <label for="seat-AA137" class="seat">137</label>
+          <input id="seat-AA138" class="seat-select" type="checkbox" value="AA138" name="seat[]" />
+          <label for="seat-AA138" class="seat">138</label>
+          <input id="seat-AA139" class="seat-select" type="checkbox" value="AA139" name="seat[]" />
+          <label for="seat-AA139" class="seat">139</label>
+          <br><br>
+          <!--Z Seating-->
+          <input id="seat-Z128" class="seat-select" type="checkbox" value="Z128" name="seat[]" />
+          <label for="seat-Z128" class="seat">128</label>
+          <input id="seat-Z129" class="seat-select" type="checkbox" value="Z129" name="seat[]" />
+          <label for="seat-Z129" class="seat">129</label>
+          <input id="seat-Z130" class="seat-select" type="checkbox" value="Z130" name="seat[]" />
+          <label for="seat-Z130" class="seat">130</label>
+          <input id="seat-Z131" class="seat-select" type="checkbox" value="Z131" name="seat[]" />
+          <label for="seat-Z131" class="seat">131</label>
+          <input id="seat-Z132" class="seat-select" type="checkbox" value="Z132" name="seat[]" />
+          <label for="seat-Z132" class="seat">132</label>
+          <input id="seat-Z133" class="seat-select" type="checkbox" value="Z133" name="seat[]" />
+          <label for="seat-Z133" class="seat">133</label>
+          <input id="seat-Z134" class="seat-select" type="checkbox" value="Z134" name="seat[]" />
+          <label for="seat-Z134" class="seat">134</label>
+          <input id="seat-Z135" class="seat-select" type="checkbox" value="Z135" name="seat[]" />
+          <label for="seat-Z135" class="seat">135</label>
+          <input id="seat-Z136" class="seat-select" type="checkbox" value="Z136" name="seat[]" />
+          <label for="seat-Z136" class="seat">136</label>
+          <input id="seat-Z137" class="seat-select" type="checkbox" value="Z137" name="seat[]" />
+          <label for="seat-Z137" class="seat">137</label>
+          <input id="seat-Z138" class="seat-select" type="checkbox" value="Z138" name="seat[]" />
+          <label for="seat-Z138" class="seat">138</label>
+          <input id="seat-Z139" class="seat-select" type="checkbox" value="Z139" name="seat[]" />
+          <label for="seat-Z139" class="seat">139</label>
+          <br><br>
+          <!--Y Seating-->
+          <input id="seat-Y128" class="seat-select" type="checkbox" value="Y128" name="seat[]" />
+          <label for="seat-Y128" class="seat">128</label>
+          <input id="seat-Y129" class="seat-select" type="checkbox" value="Y129" name="seat[]" />
+          <label for="seat-Y129" class="seat">129</label>
+          <input id="seat-Y130" class="seat-select" type="checkbox" value="Y130" name="seat[]" />
+          <label for="seat-Y130" class="seat">130</label>
+          <input id="seat-Y131" class="seat-select" type="checkbox" value="Y131" name="seat[]" />
+          <label for="seat-Y131" class="seat">131</label>
+          <input id="seat-Y132" class="seat-select" type="checkbox" value="Y132" name="seat[]" />
+          <label for="seat-Y132" class="seat">132</label>
+          <input id="seat-Y133" class="seat-select" type="checkbox" value="Y133" name="seat[]" />
+          <label for="seat-Y133" class="seat">133</label>
+          <input id="seat-Y134" class="seat-select" type="checkbox" value="Y134" name="seat[]" />
+          <label for="seat-Y134" class="seat">134</label>
+          <input id="seat-Y135" class="seat-select" type="checkbox" value="Y135" name="seat[]" />
+          <label for="seat-Y135" class="seat">135</label>
+          <input id="seat-Y136" class="seat-select" type="checkbox" value="Y136" name="seat[]" />
+          <label for="seat-Y136" class="seat">136</label>
+          <input id="seat-Y137" class="seat-select" type="checkbox" value="Y137" name="seat[]" />
+          <label for="seat-Y137" class="seat">137</label>
+          <input id="seat-Y138" class="seat-select" type="checkbox" value="Y138" name="seat[]" />
+          <label for="seat-Y138" class="seat">138</label>
+          <input id="seat-Y139" class="seat-select" type="checkbox" value="Y139" name="seat[]" />
+          <label for="seat-Y139" class="seat">139</label>
+          <br><br>
+          <!--X Seating-->
+          <input id="seat-X128" class="seat-select" type="checkbox" value="X128" name="seat[]" />
+          <label for="seat-X128" class="seat">128</label>
+          <input id="seat-X129" class="seat-select" type="checkbox" value="X129" name="seat[]" />
+          <label for="seat-X129" class="seat">129</label>
+          <input id="seat-X130" class="seat-select" type="checkbox" value="X130" name="seat[]" />
+          <label for="seat-X130" class="seat">130</label>
+          <input id="seat-X131" class="seat-select" type="checkbox" value="X131" name="seat[]" />
+          <label for="seat-X131" class="seat">131</label>
+          <input id="seat-X132" class="seat-select" type="checkbox" value="X132" name="seat[]" />
+          <label for="seat-X132" class="seat">132</label>
+          <input id="seat-X133" class="seat-select" type="checkbox" value="X133" name="seat[]" />
+          <label for="seat-X133" class="seat">133</label>
+          <input id="seat-X134" class="seat-select" type="checkbox" value="X134" name="seat[]" />
+          <label for="seat-X134" class="seat">134</label>
+          <input id="seat-X135" class="seat-select" type="checkbox" value="X135" name="seat[]" />
+          <label for="seat-X135" class="seat">135</label>
+          <input id="seat-X136" class="seat-select" type="checkbox" value="X136" name="seat[]" />
+          <label for="seat-X136" class="seat">136</label>
+          <input id="seat-X137" class="seat-select" type="checkbox" value="X137" name="seat[]" />
+          <label for="seat-X137" class="seat">137</label>
+          <input id="seat-X138" class="seat-select" type="checkbox" value="X138" name="seat[]" />
+          <label for="seat-X138" class="seat">138</label>
+          <input id="seat-X139" class="seat-select" type="checkbox" value="X139" name="seat[]" />
+          <label for="seat-X139" class="seat">139</label>
+          <br><br>
+          <!--W Seating-->
+          <input id="seat-W128" class="seat-select" type="checkbox" value="W128" name="seat[]" />
+          <label for="seat-W128" class="seat">128</label>
+          <input id="seat-W129" class="seat-select" type="checkbox" value="W129" name="seat[]" />
+          <label for="seat-W129" class="seat">129</label>
+          <input id="seat-W130" class="seat-select" type="checkbox" value="W130" name="seat[]" />
+          <label for="seat-W130" class="seat">130</label>
+          <input id="seat-W131" class="seat-select" type="checkbox" value="W131" name="seat[]" />
+          <label for="seat-W131" class="seat">131</label>
+          <input id="seat-W132" class="seat-select" type="checkbox" value="W132" name="seat[]" />
+          <label for="seat-W132" class="seat">132</label>
+          <input id="seat-W133" class="seat-select" type="checkbox" value="W133" name="seat[]" />
+          <label for="seat-W133" class="seat">133</label>
+          <input id="seat-W134" class="seat-select" type="checkbox" value="W134" name="seat[]" />
+          <label for="seat-W134" class="seat">134</label>
+          <input id="seat-W135" class="seat-select" type="checkbox" value="W135" name="seat[]" />
+          <label for="seat-W135" class="seat">135</label>
+          <input id="seat-W136" class="seat-select" type="checkbox" value="W136" name="seat[]" />
+          <label for="seat-W136" class="seat">136</label>
+          <input id="seat-W137" class="seat-select" type="checkbox" value="W137" name="seat[]" />
+          <label for="seat-W137" class="seat">137</label>
+          <input id="seat-W138" class="seat-select" type="checkbox" value="W138" name="seat[]" />
+          <label for="seat-W138" class="seat">138</label>
+          <input id="seat-W139" class="seat-select" type="checkbox" value="W139" name="seat[]" />
+          <label for="seat-W139" class="seat">139</label>
+          <br><br>
+          <!--V Seating-->
+          <input id="seat-V128" class="seat-select" type="checkbox" value="V128" name="seat[]" />
+          <label for="seat-V128" class="seat">128</label>
+          <input id="seat-V129" class="seat-select" type="checkbox" value="V129" name="seat[]" />
+          <label for="seat-V129" class="seat">129</label>
+          <input id="seat-V130" class="seat-select" type="checkbox" value="V130" name="seat[]" />
+          <label for="seat-V130" class="seat">130</label>
+          <input id="seat-V131" class="seat-select" type="checkbox" value="V131" name="seat[]" />
+          <label for="seat-V131" class="seat">131</label>
+          <input id="seat-V132" class="seat-select" type="checkbox" value="V132" name="seat[]" />
+          <label for="seat-V132" class="seat">132</label>
+          <input id="seat-V133" class="seat-select" type="checkbox" value="V133" name="seat[]" />
+          <label for="seat-V133" class="seat">133</label>
+          <input id="seat-V134" class="seat-select" type="checkbox" value="V134" name="seat[]" />
+          <label for="seat-V134" class="seat">134</label>
+          <input id="seat-V135" class="seat-select" type="checkbox" value="V135" name="seat[]" />
+          <label for="seat-V135" class="seat">135</label>
+          <input id="seat-V136" class="seat-select" type="checkbox" value="V136" name="seat[]" />
+          <label for="seat-V136" class="seat">136</label>
+          <input id="seat-V137" class="seat-select" type="checkbox" value="V137" name="seat[]" />
+          <label for="seat-V137" class="seat">137</label>
+          <input id="seat-V138" class="seat-select" type="checkbox" value="V138" name="seat[]" />
+          <label for="seat-V138" class="seat">138</label>
+          <input id="seat-V139" class="seat-select" type="checkbox" value="V139" name="seat[]" />
+          <label for="seat-V139" class="seat">139</label>
+          <br><br>
+          <!--U Seating-->
+          <input id="seat-U128" class="seat-select" type="checkbox" value="U128" name="seat[]" />
+          <label for="seat-U128" class="seat">128</label>
+          <input id="seat-U129" class="seat-select" type="checkbox" value="U129" name="seat[]" />
+          <label for="seat-U129" class="seat">129</label>
+          <input id="seat-U130" class="seat-select" type="checkbox" value="U130" name="seat[]" />
+          <label for="seat-U130" class="seat">130</label>
+          <input id="seat-U131" class="seat-select" type="checkbox" value="U131" name="seat[]" />
+          <label for="seat-U131" class="seat">131</label>
+          <input id="seat-U132" class="seat-select" type="checkbox" value="U132" name="seat[]" />
+          <label for="seat-U132" class="seat">132</label>
+          <input id="seat-U133" class="seat-select" type="checkbox" value="133" name="seat[]" />
+          <label for="seat-U133" class="seat">133</label>
+          <input id="seat-U134" class="seat-select" type="checkbox" value="U134" name="seat[]" />
+          <label for="seat-U134" class="seat">134</label>
+          <input id="seat-U135" class="seat-select" type="checkbox" value="U135" name="seat[]" />
+          <label for="seat-U135" class="seat">135</label>
+          <input id="seat-U136" class="seat-select" type="checkbox" value="U136" name="seat[]" />
+          <label for="seat-U136" class="seat">136</label>
+          <input id="seat-U137" class="seat-select" type="checkbox" value="U137" name="seat[]" />
+          <label for="seat-U137" class="seat">137</label>
+          <input id="seat-U138" class="seat-select" type="checkbox" value="U138" name="seat[]" />
+          <label for="seat-U138" class="seat">138</label>
+          <input id="seat-U139" class="seat-select" type="checkbox" value="U139" name="seat[]" />
+          <label for="seat-U139" class="seat">139</label>
+          <br><br>
+          <!--T Seating-->
+          <input id="seat-T128" class="seat-select" type="checkbox" value="T128" name="seat[]" />
+          <label for="seat-T128" class="seat">128</label>
+          <input id="seat-T129" class="seat-select" type="checkbox" value="T129" name="seat[]" />
+          <label for="seat-T129" class="seat">129</label>
+          <input id="seat-T130" class="seat-select" type="checkbox" value="T130" name="seat[]" />
+          <label for="seat-T130" class="seat">130</label>
+          <input id="seat-T131" class="seat-select" type="checkbox" value="T131" name="seat[]" />
+          <label for="seat-T131" class="seat">131</label>
+          <input id="seat-T132" class="seat-select" type="checkbox" value="T132" name="seat[]" />
+          <label for="seat-T132" class="seat">132</label>
+          <input id="seat-T133" class="seat-select" type="checkbox" value="T133" name="seat[]" />
+          <label for="seat-T133" class="seat">133</label>
+          <input id="seat-T134" class="seat-select" type="checkbox" value="T134" name="seat[]" />
+          <label for="seat-T134" class="seat">134</label>
+          <input id="seat-T135" class="seat-select" type="checkbox" value="T135" name="seat[]" />
+          <label for="seat-T135" class="seat">135</label>
+          <input id="seat-T136" class="seat-select" type="checkbox" value="T136" name="seat[]" />
+          <label for="seat-T136" class="seat">136</label>
+          <input id="seat-T137" class="seat-select" type="checkbox" value="T137" name="seat[]" />
+          <label for="seat-T137" class="seat">137</label>
+          <input id="seat-T138" class="seat-select" type="checkbox" value="T138" name="seat[]" />
+          <label for="seat-T138" class="seat">138</label>
+          <input id="seat-T139" class="seat-select" type="checkbox" value="T139" name="seat[]" />
+          <label for="seat-T139" class="seat">139</label>
+          <br><br>
+          <!--S Seating-->
+          <input id="seat-S128" class="seat-select" type="checkbox" value="S128" name="seat[]" />
+          <label for="seat-S128" class="seat">128</label>
+          <input id="seat-S129" class="seat-select" type="checkbox" value="S129" name="seat[]" />
+          <label for="seat-S129" class="seat">129</label>
+          <input id="seat-S130" class="seat-select" type="checkbox" value="S130" name="seat[]" />
+          <label for="seat-S130" class="seat">130</label>
+          <input id="seat-S131" class="seat-select" type="checkbox" value="S131" name="seat[]" />
+          <label for="seat-S131" class="seat">131</label>
+          <input id="seat-S132" class="seat-select" type="checkbox" value="S132" name="seat[]" />
+          <label for="seat-S132" class="seat">132</label>
+          <input id="seat-S133" class="seat-select" type="checkbox" value="S133" name="seat[]" />
+          <label for="seat-S133" class="seat">133</label>
+          <input id="seat-S134" class="seat-select" type="checkbox" value="S134" name="seat[]" />
+          <label for="seat-S134" class="seat">134</label>
+          <input id="seat-S135" class="seat-select" type="checkbox" value="S135" name="seat[]" />
+          <label for="seat-S135" class="seat">135</label>
+          <input id="seat-S136" class="seat-select" type="checkbox" value="S136" name="seat[]" />
+          <label for="seat-S136" class="seat">136</label>
+          <input id="seat-S137" class="seat-select" type="checkbox" value="S137" name="seat[]" />
+          <label for="seat-S137" class="seat">137</label>
+          <input id="seat-S138" class="seat-select" type="checkbox" value="S138" name="seat[]" />
+          <label for="seat-S138" class="seat">138</label>
+          <input id="seat-S139" class="seat-select" type="checkbox" value="S139" name="seat[]" />
+          <label for="seat-S139" class="seat">139</label>
+          <br><br>
+          <!--R Seating-->
+          <input id="seat-R128" class="seat-select" type="checkbox" value="R128" name="seat[]" />
+          <label for="seat-R128" class="seat">128</label>
+          <input id="seat-R129" class="seat-select" type="checkbox" value="R129" name="seat[]" />
+          <label for="seat-R129" class="seat">129</label>
+          <input id="seat-R130" class="seat-select" type="checkbox" value="R130" name="seat[]" />
+          <label for="seat-R130" class="seat">130</label>
+          <input id="seat-R131" class="seat-select" type="checkbox" value="R131" name="seat[]" />
+          <label for="seat-R131" class="seat">131</label>
+          <input id="seat-R132" class="seat-select" type="checkbox" value="R132" name="seat[]" />
+          <label for="seat-R132" class="seat">132</label>
+          <input id="seat-R133" class="seat-select" type="checkbox" value="R133" name="seat[]" />
+          <label for="seat-R133" class="seat">133</label>
+          <input id="seat-R134" class="seat-select" type="checkbox" value="R134" name="seat[]" />
+          <label for="seat-R134" class="seat">134</label>
+          <input id="seat-R135" class="seat-select" type="checkbox" value="R135" name="seat[]" />
+          <label for="seat-R135" class="seat">135</label>
+          <input id="seat-R136" class="seat-select" type="checkbox" value="R136" name="seat[]" />
+          <label for="seat-R136" class="seat">136</label>
+          <input id="seat-R137" class="seat-select" type="checkbox" value="R137" name="seat[]" />
+          <label for="seat-R137" class="seat">137</label>
+          <input id="seat-R138" class="seat-select" type="checkbox" value="R138" name="seat[]" />
+          <label for="seat-R138" class="seat">138</label>
+          <input id="seat-R139" class="seat-select" type="checkbox" value="R139" name="seat[]" />
+          <label for="seat-R139" class="seat">139</label>
+          <input id="seat-R140" class="seat-select" type="checkbox" value="R140" name="seat[]" />
+          <label for="seat-R140" class="seat">140</label>
+          <br><br>
+          <!--Q Seating-->
+          <input id="seat-Q128" class="seat-select" type="checkbox" value="Q128" name="seat[]" />
+          <label for="seat-Q128" class="seat">128</label>
+          <input id="seat-Q129" class="seat-select" type="checkbox" value="Q129" name="seat[]" />
+          <label for="seat-Q129" class="seat">129</label>
+          <input id="seat-Q130" class="seat-select" type="checkbox" value="Q130" name="seat[]" />
+          <label for="seat-Q130" class="seat">130</label>
+          <input id="seat-Q131" class="seat-select" type="checkbox" value="Q131" name="seat[]" />
+          <label for="seat-Q131" class="seat">131</label>
+          <input id="seat-Q132" class="seat-select" type="checkbox" value="Q132" name="seat[]" />
+          <label for="seat-Q132" class="seat">132</label>
+          <input id="seat-Q133" class="seat-select" type="checkbox" value="Q133" name="seat[]" />
+          <label for="seat-Q133" class="seat">133</label>
+          <input id="seat-Q134" class="seat-select" type="checkbox" value="Q134" name="seat[]" />
+          <label for="seat-Q134" class="seat">134</label>
+          <input id="seat-Q135" class="seat-select" type="checkbox" value="Q135" name="seat[]" />
+          <label for="seat-Q135" class="seat">135</label>
+          <input id="seat-Q136" class="seat-select" type="checkbox" value="Q136" name="seat[]" />
+          <label for="seat-Q136" class="seat">136</label>
+          <input id="seat-Q137" class="seat-select" type="checkbox" value="Q137" name="seat[]" />
+          <label for="seat-Q137" class="seat">137</label>
+          <input id="seat-Q138" class="seat-select" type="checkbox" value="Q138" name="seat[]" />
+          <label for="seat-Q138" class="seat">138</label>
+          <input id="seat-Q139" class="seat-select" type="checkbox" value="Q139" name="seat[]" />
+          <label for="seat-Q139" class="seat">139</label>
+          <input id="seat-Q140" class="seat-select" type="checkbox" value="Q140" name="seat[]" />
+          <label for="seat-Q140" class="seat">140</label>
+          <br><br>
+          <!--P Seating-->
+          <input id="seat-P128" class="seat-select" type="checkbox" value="P128" name="seat[]" />
+          <label for="seat-P128" class="seat">128</label>
+          <input id="seat-P129" class="seat-select" type="checkbox" value="P129" name="seat[]" />
+          <label for="seat-P129" class="seat">129</label>
+          <input id="seat-P130" class="seat-select" type="checkbox" value="P130" name="seat[]" />
+          <label for="seat-P130" class="seat">130</label>
+          <input id="seat-P131" class="seat-select" type="checkbox" value="P131" name="seat[]" />
+          <label for="seat-P131" class="seat">131</label>
+          <input id="seat-P132" class="seat-select" type="checkbox" value="P132" name="seat[]" />
+          <label for="seat-P132" class="seat">132</label>
+          <input id="seat-P133" class="seat-select" type="checkbox" value="P133" name="seat[]" />
+          <label for="seat-P133" class="seat">133</label>
+          <input id="seat-P134" class="seat-select" type="checkbox" value="P134" name="seat[]" />
+          <label for="seat-P134" class="seat">134</label>
+          <input id="seat-P135" class="seat-select" type="checkbox" value="P135" name="seat[]" />
+          <label for="seat-P135" class="seat">135</label>
+          <input id="seat-P136" class="seat-select" type="checkbox" value="P136" name="seat[]" />
+          <label for="seat-P136" class="seat">136</label>
+          <input id="seat-P137" class="seat-select" type="checkbox" value="P137" name="seat[]" />
+          <label for="seat-P137" class="seat">137</label>
+          <input id="seat-P138" class="seat-select" type="checkbox" value="P138" name="seat[]" />
+          <label for="seat-P138" class="seat">138</label>
+          <input id="seat-P139" class="seat-select" type="checkbox" value="P139" name="seat[]" />
+          <label for="seat-P139" class="seat">139</label>
+          <input id="seat-P140" class="seat-select" type="checkbox" value="P140" name="seat[]" />
+          <label for="seat-P140" class="seat">140</label>
+          <br><br>
+          <!--N Seating-->
+          <input id="seat-N128" class="seat-select" type="checkbox" value="N128" name="seat[]" />
+          <label for="seat-N128" class="seat">128</label>
+          <input id="seat-N129" class="seat-select" type="checkbox" value="N129" name="seat[]" />
+          <label for="seat-N129" class="seat">129</label>
+          <input id="seat-N130" class="seat-select" type="checkbox" value="N130" name="seat[]" />
+          <label for="seat-N130" class="seat">130</label>
+          <input id="seat-N131" class="seat-select" type="checkbox" value="N131" name="seat[]" />
+          <label for="seat-N131" class="seat">131</label>
+          <input id="seat-N132" class="seat-select" type="checkbox" value="N132" name="seat[]" />
+          <label for="seat-N132" class="seat">132</label>
+          <input id="seat-N133" class="seat-select" type="checkbox" value="N133" name="seat[]" />
+          <label for="seat-N133" class="seat">133</label>
+          <input id="seat-N134" class="seat-select" type="checkbox" value="N134" name="seat[]" />
+          <label for="seat-N134" class="seat">134</label>
+          <input id="seat-N135" class="seat-select" type="checkbox" value="N135" name="seat[]" />
+          <label for="seat-N135" class="seat">135</label>
+          <input id="seat-N136" class="seat-select" type="checkbox" value="N136" name="seat[]" />
+          <label for="seat-N136" class="seat">136</label>
+          <input id="seat-N137" class="seat-select" type="checkbox" value="N137" name="seat[]" />
+          <label for="seat-N137" class="seat">137</label>
+          <input id="seat-N138" class="seat-select" type="checkbox" value="N138" name="seat[]" />
+          <label for="seat-N138" class="seat">138</label>
+          <input id="seat-N139" class="seat-select" type="checkbox" value="N139" name="seat[]" />
+          <label for="seat-N139" class="seat">139</label>
+          <input id="seat-N140" class="seat-select" type="checkbox" value="N140" name="seat[]" />
+          <label for="seat-N140" class="seat">140</label>
+          <br><br>
+          <!--M Seating-->
+          <input id="seat-M128" class="seat-select" type="checkbox" value="M128" name="seat[]" />
+          <label for="seat-M128" class="seat">128</label>
+          <input id="seat-M129" class="seat-select" type="checkbox" value="M129" name="seat[]" />
+          <label for="seat-M129" class="seat">129</label>
+          <input id="seat-M130" class="seat-select" type="checkbox" value="M130" name="seat[]" />
+          <label for="seat-M130" class="seat">130</label>
+          <input id="seat-M131" class="seat-select" type="checkbox" value="M131" name="seat[]" />
+          <label for="seat-M131" class="seat">131</label>
+          <input id="seat-M132" class="seat-select" type="checkbox" value="M132" name="seat[]" />
+          <label for="seat-M132" class="seat">132</label>
+          <input id="seat-M133" class="seat-select" type="checkbox" value="M133" name="seat[]" />
+          <label for="seat-M133" class="seat">133</label>
+          <input id="seat-M134" class="seat-select" type="checkbox" value="M134" name="seat[]" />
+          <label for="seat-M134" class="seat">134</label>
+          <input id="seat-M135" class="seat-select" type="checkbox" value="M135" name="seat[]" />
+          <label for="seat-M135" class="seat">135</label>
+          <input id="seat-M136" class="seat-select" type="checkbox" value="M136" name="seat[]" />
+          <label for="seat-M136" class="seat">136</label>
+          <input id="seat-M137" class="seat-select" type="checkbox" value="M137" name="seat[]" />
+          <label for="seat-M137" class="seat">137</label>
+          <input id="seat-M138" class="seat-select" type="checkbox" value="M138" name="seat[]" />
+          <label for="seat-M138" class="seat">138</label>
+          <input id="seat-M139" class="seat-select" type="checkbox" value="M139" name="seat[]" />
+          <label for="seat-M139" class="seat">139</label>
+          <br><br>
+          <!--L Seating-->
+          <input id="seat-L128" class="seat-select" type="checkbox" value="L128" name="seat[]" />
+          <label for="seat-L128" class="seat">128</label>
+          <input id="seat-L129" class="seat-select" type="checkbox" value="L129" name="seat[]" />
+          <label for="seat-L129" class="seat">129</label>
+          <input id="seat-L130" class="seat-select" type="checkbox" value="L130" name="seat[]" />
+          <label for="seat-L130" class="seat">130</label>
+          <input id="seat-L131" class="seat-select" type="checkbox" value="L131" name="seat[]" />
+          <label for="seat-L131" class="seat">131</label>
+          <input id="seat-L132" class="seat-select" type="checkbox" value="L132" name="seat[]" />
+          <label for="seat-L132" class="seat">132</label>
+          <input id="seat-L133" class="seat-select" type="checkbox" value="L133" name="seat[]" />
+          <label for="seat-L133" class="seat">133</label>
+          <input id="seat-L134" class="seat-select" type="checkbox" value="L134" name="seat[]" />
+          <label for="seat-L134" class="seat">134</label>
+          <input id="seat-L135" class="seat-select" type="checkbox" value="L135" name="seat[]" />
+          <label for="seat-L135" class="seat">135</label>
+          <input id="seat-L136" class="seat-select" type="checkbox" value="L136" name="seat[]" />
+          <label for="seat-L136" class="seat">136</label>
+          <input id="seat-L137" class="seat-select" type="checkbox" value="L137" name="seat[]" />
+          <label for="seat-L137" class="seat">137</label>
+          <input id="seat-L138" class="seat-select" type="checkbox" value="L138" name="seat[]" />
+          <label for="seat-L138" class="seat">138</label>
+          <input id="seat-H7" class="seat-select-handicap" type="checkbox" value="H7" name="seat[]" />
+          <label for="seat-H7" class="seat-handicap">H7</label>
+          <br><br>
+          <!--K Seating-->
+          <input id="seat-K128" class="seat-select" type="checkbox" value="K128" name="seat[]" />
+          <label for="seat-K128" class="seat">128</label>
+          <input id="seat-K129" class="seat-select" type="checkbox" value="K129" name="seat[]" />
+          <label for="seat-K129" class="seat">129</label>
+          <input id="seat-K130" class="seat-select" type="checkbox" value="K130" name="seat[]" />
+          <label for="seat-K130" class="seat">130</label>
+          <input id="seat-K131" class="seat-select" type="checkbox" value="K131" name="seat[]" />
+          <label for="seat-K131" class="seat">131</label>
+          <input id="seat-K132" class="seat-select" type="checkbox" value="K132" name="seat[]" />
+          <label for="seat-K132" class="seat">132</label>
+          <input id="seat-K133" class="seat-select" type="checkbox" value="K133" name="seat[]" />
+          <label for="seat-K133" class="seat">133</label>
+          <input id="seat-K134" class="seat-select" type="checkbox" value="K134" name="seat[]" />
+          <label for="seat-K134" class="seat">134</label>
+          <input id="seat-K135" class="seat-select" type="checkbox" value="K135" name="seat[]" />
+          <label for="seat-K135" class="seat">135</label>
+          <input id="seat-K136" class="seat-select" type="checkbox" value="K136" name="seat[]" />
+          <label for="seat-K136" class="seat">136</label>
+          <input id="seat-K137" class="seat-select" type="checkbox" value="K137" name="seat[]" />
+          <label for="seat-K137" class="seat">137</label>
+          <input id="seat-K138" class="seat-select" type="checkbox" value="K138" name="seat[]" />
+          <label for="seat-K138" class="seat">138</label>
+          <input id="seat-K139" class="seat-select" type="checkbox" value="K139" name="seat[]" />
+          <label for="seat-K139" class="seat">139</label>
+          <br><br>
+          <!--J Seating-->
+          <input id="seat-J128" class="seat-select" type="checkbox" value="J128" name="seat[]" />
+          <label for="seat-J128" class="seat">128</label>
+          <input id="seat-J129" class="seat-select" type="checkbox" value="J129" name="seat[]" />
+          <label for="seat-J129" class="seat">129</label>
+          <input id="seat-J130" class="seat-select" type="checkbox" value="J130" name="seat[]" />
+          <label for="seat-J130" class="seat">130</label>
+          <input id="seat-J131" class="seat-select" type="checkbox" value="J131" name="seat[]" />
+          <label for="seat-J131" class="seat">131</label>
+          <input id="seat-J132" class="seat-select" type="checkbox" value="J132" name="seat[]" />
+          <label for="seat-J132" class="seat">132</label>
+          <input id="seat-J133" class="seat-select" type="checkbox" value="J133" name="seat[]" />
+          <label for="seat-J133" class="seat">133</label>
+          <input id="seat-J134" class="seat-select" type="checkbox" value="J134" name="seat[]" />
+          <label for="seat-J134" class="seat">134</label>
+          <input id="seat-J135" class="seat-select" type="checkbox" value="J135" name="seat[]" />
+          <label for="seat-J135" class="seat">135</label>
+          <input id="seat-J136" class="seat-select" type="checkbox" value="J136" name="seat[]" />
+          <label for="seat-J136" class="seat">136</label>
+          <input id="seat-J137" class="seat-select" type="checkbox" value="J137" name="seat[]" />
+          <label for="seat-J137" class="seat">137</label>
+          <input id="seat-J138" class="seat-select" type="checkbox" value="J138" name="seat[]" />
+          <label for="seat-J138" class="seat">138</label>
+          <input id="seat-J139" class="seat-select" type="checkbox" value="J139" name="seat[]" />
+          <label for="seat-J139" class="seat">139</label>
+          <input id="seat-J140" class="seat-select" type="checkbox" value="J140" name="seat[]" />
+          <label for="seat-J140" class="seat">140</label>
+          <br><br>
+          <!--H Seating-->
+          <input id="seat-H128" class="seat-select" type="checkbox" value="H128" name="seat[]" />
+          <label for="seat-H128" class="seat">128</label>
+          <input id="seat-H129" class="seat-select" type="checkbox" value="H129" name="seat[]" />
+          <label for="seat-H129" class="seat">129</label>
+          <input id="seat-H130" class="seat-select" type="checkbox" value="H130" name="seat[]" />
+          <label for="seat-H130" class="seat">130</label>
+          <input id="seat-H131" class="seat-select" type="checkbox" value="H131" name="seat[]" />
+          <label for="seat-H131" class="seat">131</label>
+          <input id="seat-H132" class="seat-select" type="checkbox" value="H132" name="seat[]" />
+          <label for="seat-H132" class="seat">132</label>
+          <input id="seat-H133" class="seat-select" type="checkbox" value="H133" name="seat[]" />
+          <label for="seat-H133" class="seat">133</label>
+          <input id="seat-H134" class="seat-select" type="checkbox" value="H134" name="seat[]" />
+          <label for="seat-H134" class="seat">134</label>
+          <input id="seat-H135" class="seat-select" type="checkbox" value="H135" name="seat[]" />
+          <label for="seat-H135" class="seat">135</label>
+          <input id="seat-H136" class="seat-select" type="checkbox" value="H136" name="seat[]" />
+          <label for="seat-H136" class="seat">136</label>
+          <input id="seat-H137" class="seat-select" type="checkbox" value="H137" name="seat[]" />
+          <label for="seat-H137" class="seat">137</label>
+          <input id="seat-H138" class="seat-select" type="checkbox" value="H138" name="seat[]" />
+          <label for="seat-H138" class="seat">138</label>
+          <input id="seat-H139" class="seat-select" type="checkbox" value="H139" name="seat[]" />
+          <label for="seat-H139" class="seat">139</label>
+          <input id="seat-H140" class="seat-select" type="checkbox" value="H140" name="seat[]" />
+          <label for="seat-H140" class="seat">140</label>
+          <br><br>
+          <!--G Seating-->
+          <input id="seat-G128" class="seat-select" type="checkbox" value="G128" name="seat[]" />
+          <label for="seat-G128" class="seat">128</label>
+          <input id="seat-G129" class="seat-select" type="checkbox" value="G129" name="seat[]" />
+          <label for="seat-G129" class="seat">129</label>
+          <input id="seat-G130" class="seat-select" type="checkbox" value="G130" name="seat[]" />
+          <label for="seat-G130" class="seat">130</label>
+          <input id="seat-G131" class="seat-select" type="checkbox" value="G131" name="seat[]" />
+          <label for="seat-G131" class="seat">131</label>
+          <input id="seat-G132" class="seat-select" type="checkbox" value="G132" name="seat[]" />
+          <label for="seat-G132" class="seat">132</label>
+          <input id="seat-G133" class="seat-select" type="checkbox" value="G133" name="seat[]" />
+          <label for="seat-G133" class="seat">133</label>
+          <input id="seat-G134" class="seat-select" type="checkbox" value="G134" name="seat[]" />
+          <label for="seat-G134" class="seat">134</label>
+          <input id="seat-G135" class="seat-select" type="checkbox" value="G135" name="seat[]" />
+          <label for="seat-G135" class="seat">135</label>
+          <input id="seat-G136" class="seat-select" type="checkbox" value="G136" name="seat[]" />
+          <label for="seat-G136" class="seat">136</label>
+          <input id="seat-G137" class="seat-select" type="checkbox" value="G137" name="seat[]" />
+          <label for="seat-G137" class="seat">137</label>
+          <input id="seat-G138" class="seat-select" type="checkbox" value="G138" name="seat[]" />
+          <label for="seat-G138" class="seat">138</label>
+          <input id="seat-G139" class="seat-select" type="checkbox" value="G139" name="seat[]" />
+          <label for="seat-G139" class="seat">139</label>
+          <input id="seat-G140" class="seat-select" type="checkbox" value="G140" name="seat[]" />
+          <label for="seat-G140" class="seat">140</label>
+          <br><br>
+          <!--F Seating-->
+          <input id="seat-F128" class="seat-select" type="checkbox" value="F128" name="seat[]" />
+          <label for="seat-F128" class="seat">128</label>
+          <input id="seat-F129" class="seat-select" type="checkbox" value="F129" name="seat[]" />
+          <label for="seat-F129" class="seat">129</label>
+          <input id="seat-F130" class="seat-select" type="checkbox" value="F130" name="seat[]" />
+          <label for="seat-F130" class="seat">130</label>
+          <input id="seat-F131" class="seat-select" type="checkbox" value="F131" name="seat[]" />
+          <label for="seat-F131" class="seat">131</label>
+          <input id="seat-F132" class="seat-select" type="checkbox" value="F132" name="seat[]" />
+          <label for="seat-F132" class="seat">132</label>
+          <input id="seat-F133" class="seat-select" type="checkbox" value="F133" name="seat[]" />
+          <label for="seat-F133" class="seat">133</label>
+          <input id="seat-F134" class="seat-select" type="checkbox" value="F134" name="seat[]" />
+          <label for="seat-F134" class="seat">134</label>
+          <input id="seat-F135" class="seat-select" type="checkbox" value="F135" name="seat[]" />
+          <label for="seat-F135" class="seat">135</label>
+          <input id="seat-F136" class="seat-select" type="checkbox" value="F136" name="seat[]" />
+          <label for="seat-F136" class="seat">136</label>
+          <input id="seat-F137" class="seat-select" type="checkbox" value="F137" name="seat[]" />
+          <label for="seat-F137" class="seat">137</label>
+          <input id="seat-F138" class="seat-select" type="checkbox" value="F138" name="seat[]" />
+          <label for="seat-F138" class="seat">138</label>
+          <input id="seat-F139" class="seat-select" type="checkbox" value="F139" name="seat[]" />
+          <label for="seat-F139" class="seat">139</label>
+          <br><br>
+          <!--E Seating-->
+          <input id="seat-E128" class="seat-select" type="checkbox" value="E128" name="seat[]" />
+          <label for="seat-E128" class="seat">128</label>
+          <input id="seat-E129" class="seat-select" type="checkbox" value="E129" name="seat[]" />
+          <label for="seat-E129" class="seat">129</label>
+          <input id="seat-E130" class="seat-select" type="checkbox" value="E130" name="seat[]" />
+          <label for="seat-E130" class="seat">130</label>
+          <input id="seat-E131" class="seat-select" type="checkbox" value="E131" name="seat[]" />
+          <label for="seat-E131" class="seat">131</label>
+          <input id="seat-E132" class="seat-select" type="checkbox" value="E132" name="seat[]" />
+          <label for="seat-E132" class="seat">132</label>
+          <input id="seat-E133" class="seat-select" type="checkbox" value="E133" name="seat[]" />
+          <label for="seat-E133" class="seat">133</label>
+          <input id="seat-E134" class="seat-select" type="checkbox" value="E134" name="seat[]" />
+          <label for="seat-E134" class="seat">134</label>
+          <input id="seat-E135" class="seat-select" type="checkbox" value="E135" name="seat[]" />
+          <label for="seat-E135" class="seat">135</label>
+          <input id="seat-E136" class="seat-select" type="checkbox" value="E136" name="seat[]" />
+          <label for="seat-E136" class="seat">136</label>
+          <input id="seat-E137" class="seat-select" type="checkbox" value="E137" name="seat[]" />
+          <label for="seat-E137" class="seat">137</label>
+          <input id="seat-E138" class="seat-select" type="checkbox" value="E138" name="seat[]" />
+          <label for="seat-E138" class="seat">138</label>
+          <input id="seat-E139" class="seat-select" type="checkbox" value="E139" name="seat[]" />
+          <label for="seat-E139" class="seat">139</label>
+          <br><br>
+          <!--D Seating-->
+          <input id="seat-D128" class="seat-select" type="checkbox" value="D128" name="seat[]" />
+          <label for="seat-D128" class="seat">128</label>
+          <input id="seat-D129" class="seat-select" type="checkbox" value="D129" name="seat[]" />
+          <label for="seat-D129" class="seat">129</label>
+          <input id="seat-D130" class="seat-select" type="checkbox" value="D130" name="seat[]" />
+          <label for="seat-D130" class="seat">130</label>
+          <input id="seat-D131" class="seat-select" type="checkbox" value="D131" name="seat[]" />
+          <label for="seat-D131" class="seat">131</label>
+          <input id="seat-D132" class="seat-select" type="checkbox" value="D132" name="seat[]" />
+          <label for="seat-D132" class="seat">132</label>
+          <input id="seat-D133" class="seat-select" type="checkbox" value="D133" name="seat[]" />
+          <label for="seat-D133" class="seat">133</label>
+          <input id="seat-D134" class="seat-select" type="checkbox" value="D134" name="seat[]" />
+          <label for="seat-D134" class="seat">134</label>
+          <input id="seat-D135" class="seat-select" type="checkbox" value="D135" name="seat[]" />
+          <label for="seat-D135" class="seat">135</label>
+          <input id="seat-D136" class="seat-select" type="checkbox" value="D136" name="seat[]" />
+          <label for="seat-D136" class="seat">136</label>
+          <input id="seat-D137" class="seat-select" type="checkbox" value="D137" name="seat[]" />
+          <label for="seat-D137" class="seat">137</label>
+          <input id="seat-D138" class="seat-select" type="checkbox" value="D138" name="seat[]" />
+          <label for="seat-D138" class="seat">138</label>
+          <br><br>
+          <!--C Seating-->
+          <input id="seat-C128" class="seat-select" type="checkbox" value="C128" name="seat[]" />
+          <label for="seat-C128" class="seat">128</label>
+          <input id="seat-C129" class="seat-select" type="checkbox" value="C129" name="seat[]" />
+          <label for="seat-C129" class="seat">129</label>
+          <input id="seat-C130" class="seat-select" type="checkbox" value="C130" name="seat[]" />
+          <label for="seat-C130" class="seat">130</label>
+          <input id="seat-C131" class="seat-select" type="checkbox" value="C131" name="seat[]" />
+          <label for="seat-C131" class="seat">131</label>
+          <input id="seat-C132" class="seat-select" type="checkbox" value="C132" name="seat[]" />
+          <label for="seat-C132" class="seat">132</label>
+          <input id="seat-C133" class="seat-select" type="checkbox" value="C133" name="seat[]" />
+          <label for="seat-C133" class="seat">133</label>
+          <input id="seat-C134" class="seat-select" type="checkbox" value="C134" name="seat[]" />
+          <label for="seat-C134" class="seat">134</label>
+          <input id="seat-C135" class="seat-select" type="checkbox" value="C135" name="seat[]" />
+          <label for="seat-C135" class="seat">135</label>
+          <input id="seat-C136" class="seat-select" type="checkbox" value="C136" name="seat[]" />
+          <label for="seat-C136" class="seat">136</label>
+          <input id="seat-C137" class="seat-select" type="checkbox" value="C137" name="seat[]" />
+          <label for="seat-C137" class="seat">137</label>
+          <br><br>
+          <!--B Seating-->
+          <input id="seat-B128" class="seat-select" type="checkbox" value="P128" name="seat[]" />
+          <label for="seat-B128" class="seat">B128</label>
+          <input id="seat-B129" class="seat-select" type="checkbox" value="P129" name="seat[]" />
+          <label for="seat-B129" class="seat">B129</label>
+          <input id="seat-B130" class="seat-select" type="checkbox" value="P130" name="seat[]" />
+          <label for="seat-B130" class="seat">B130</label>
+          <input id="seat-B131" class="seat-select" type="checkbox" value="P131" name="seat[]" />
+          <label for="seat-B131" class="seat">B131</label>
+          <input id="seat-B132" class="seat-select" type="checkbox" value="P132" name="seat[]" />
+          <label for="seat-B132" class="seat">B132</label>
+          <input id="seat-B133" class="seat-select" type="checkbox" value="P133" name="seat[]" />
+          <label for="seat-B133" class="seat">B133</label>
+          <input id="seat-B134" class="seat-select" type="checkbox" value="P134" name="seat[]" />
+          <label for="seat-B134" class="seat">B134</label>
+          <input id="seat-B135" class="seat-select" type="checkbox" value="P135" name="seat[]" />
+          <label for="seat-B135" class="seat">B135</label>
+          <input id="seat-B136" class="seat-select" type="checkbox" value="P136" name="seat[]" />
+          <label for="seat-B136" class="seat">B136</label>
+          <br><br>
+          <!--A Seating-->
+          <input id="seat-A101" class="seat-unselect" type="button" value="B101" name="seat[]" />
+          <input id="seat-A102" class="seat-unselect" type="button" value="B102" name="seat[]" />
+          <input id="seat-A103" class="seat-unselect" type="button" value="B103" name="seat[]" />
+          <input id="seat-A104" class="seat-unselect" type="button" value="B104" name="seat[]" />
+          <input id="seat-A105" class="seat-unselect" type="button" value="B105" name="seat[]" />
+          <input id="seat-A106" class="seat-unselect" type="button" value="B106" name="seat[]" />
+          <input id="seat-A101" class="seat-unselect" type="button" value="B101" name="seat[]" />
+          <input id="seat-A102" class="seat-unselect" type="button" value="B102" name="seat[]" />
+          <input id="seat-A103" class="seat-unselect" type="button" value="B103" name="seat[]" />
+          <input id="seat-A104" class="seat-unselect" type="button" value="B104" name="seat[]" />
+          <input id="seat-A105" class="seat-unselect" type="button" value="B105" name="seat[]" />
+          <input id="seat-A106" class="seat-select" type="checkbox" value="B106" name="seat[]" />
+          <input id="seat-A106" class="seat-select" type="checkbox" value="B106" name="seat[]" />
+          </section>
+          
+        </div>
+
+        <!--end parent-->
+      </div>
+
+      <button id="btn">Get Selected Seats</button>
+
+<br><br><br><br><br>
+          
+    <footer>
+        <p>©2021 by AND X Entertainment.<br>
+      (208) 534-5699</p>
+    </footer>
+    <script src="js/seatSave.js"></script>
+</body>
+</html>

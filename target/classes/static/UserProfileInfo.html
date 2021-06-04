@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>BlitzTix</title>
+</head>
+
+<body onload="display()">
+  <header>
+    <div class="nav_container">
+      <img src="images/andx_logo.png" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="UserLogin.html">Login</a></li>
+          <li><a href="UserVenueSelection.html">Venue Select</a></li>
+          <li><a href="DataFeed.html">Data Feed</a></li>
+          <li><a href="Reports.html">Reports</a></li>
+          <li><a href="SeatSections.html">Seat Selection</a></li>
+          <li><a href="CreateEvent.html">Create Event</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <h2> Personal Account Information</h2>
+    <form>
+        <table>
+          <tr>
+            <td align="right">First Name:</td>
+            <td align="left"> The first name will be displayed here.</td>
+          </tr>
+          <tr>
+            <td align="right">Last Name:</td>
+            <td align="left">The last name will be displayed here.</td>
+          </tr>
+          <tr>
+            <td align="right">Email:</td>
+            <td align="left">The email will be displayed here.</td>
+          </tr>
+          <tr>
+            <td align="right">Phone Number:</td>
+            <td align="left">The phone number will be displayed here.</td>
+          </tr>
+        </table>
+      </form>
+
+
+    <h2> Credit Card Information</h2>
+    <form>
+        <table>
+          <tr>
+            <td align="right">Name on the Card:</td>
+            <td align="left"><input type="cardName" placeholder="Last, First Name" name="cardName" required></td>
+          </tr>
+          <tr>
+            <td align="right">Credit Card Number:</td>
+            <td align="left"><input type="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" name="cardNumber" required></td>
+          </tr>
+          <tr>
+            <td align="right">Card Expiration Date:</td>
+            <td align="left"><input type="cardExpires" placeholder="MM/YYYY" name="cardExpires" required></td>
+          </tr>
+          <tr>
+            <td align="right">Security Code:</td>
+            <td align="left"><input type="cardCode" placeholder="XXX" name="cardCode" required></td>
+          </tr>
+        </table>
+      </form>
+
+    <h2> Past Activity</h2>
+    <form>
+        <dl>
+            <dt>Last Event</dt>
+            <dd>- Venue</dd>
+            <dd>- Cost</dd>
+            <dt>Past Event</dt>
+            <dd>- Past Venue</dd>
+            <dd>- Previous Cost</dd>
+            <dt>Past Event</dt>
+            <dd>- Past Venue</dd>
+            <dd>- Previous Cost</dd>
+            <dt>Past Event</dt>
+            <dd>- Past Venue</dd>
+            <dd>- Previous Cost</dd>
+            <dt>Past Event</dt>
+            <dd>- Past Venue</dd>
+            <dd>- Previous Cost</dd>
+            <dt>Past Event</dt>
+            <dd>- Past Venue</dd>
+            <dd>- Previous Cost</dd>
+        </dl>
+    </form>
+      
+    <br>
+    <br>
+
+    <footer>
+      <p>©2021 by AND X Entertainment.<br>
+    (208) 534-5699</p>
+  </footer>
+
+</body>
+</html>

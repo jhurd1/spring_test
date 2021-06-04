@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>BlitzTix</title>
+</head>
+
+<body onload="display()">
+  <header>
+    <div class="nav_container">
+      <img src="images/andx_logo.png" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="UserLogin.html">Login</a></li>
+          <li><a href="UserVenueSelection.html">Venue Select</a></li>
+          <li><a href="DataFeed.html">Data Feed</a></li>
+          <li><a href="Reports.html">Reports</a></li>
+          <li><a href="SeatSections.html">Seat Selection</a></li>
+          <li><a href="CreateEvent.html">Create Event</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>  
+
+    <h2>User Sign Up </h2>
+    <form>
+        <table class="outlines">
+          <tr>
+            <td align="right">First Name:</td>
+            <td align="left"> <input type="text" placeholder="Enter First Name" name="firstname" required></td>
+          </tr>
+          <tr>
+            <td align="right">Last Name:</td>
+            <td align="left"><input type="text" placeholder="Enter Last Name" name="lastname" required></td>
+          </tr>
+          <tr>
+            <td align="right">Email:</td>
+            <td align="left"><input type="text" placeholder="Enter Email" name="email" required></td>
+          </tr>
+          <tr>
+            <td align="right">Phone Number:</td>
+            <td align="left"><input type="text" placeholder="Enter Phone Number" name="phoneNumber" required></td>
+          </tr>
+          <tr>
+            <td align="right">Password:</td>
+            <td align="left"><input type="password" placeholder="Enter Password" name="password" required></td>
+          </tr>
+          <tr>
+          <!--Add an option for new users to select for gleaning more information about account types-->
+            <td align="right">Account:</td>
+            <td align="left"><select type="drop-down" placeholder="Select account type" name="account" required>
+              <option value="standard">standard</option>
+              <option value="organizer">organizer</option>
+              <option value="administrator">administrator</option>
+            </select>
+            </td>
+          </tr>
+        </table>
+      </form>
+      
+      <div class="container">
+        <div class="center">
+          <table>
+            <tr>
+              <td><button type="submit">Sign Up</button></td> 
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <footer>
+        <p>©2021 by AND X Entertainment.<br>
+      (208) 534-5699</p>
+    </footer>
+
+</body>
+</html>
